@@ -3,11 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>∞ Infinite Control Panel System Inc. | Custom Control Panel Manufacturing</title>
-<meta name="description" content="Expert custom manufacturing of industrial control panels, MCC assemblies and VFD panels. Contact Darpan Patel at deeppatel0839@gmail.com">
-<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Barlow+Condensed:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<title>Infinite Control Panel System Inc. | Custom Control Panel Manufacturing</title>
+<meta name="description" content="Expert custom manufacturing of industrial control panels, MCC assemblies and VFD panels.">
 <style>
-/* ─── RESET & ROOT ─────────────────────────────────── */
 *{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;}
 :root{
@@ -23,703 +21,174 @@ html{scroll-behavior:smooth;}
   --text:#192030;
   --mid:#4e5d78;
   --muted:#8898b0;
-  --gold:#c9933a;
 }
-body{font-family:'Barlow',sans-serif;color:var(--text);background:var(--white);overflow-x:hidden;}
+body{font-family:Arial,sans-serif;color:var(--text);background:var(--white);overflow-x:hidden;}
 a{text-decoration:none;color:inherit;}
-img{max-width:100%;}
-/* ─── NAV ───────────────────────────────────────────── */
-header{
-  background:var(--white);
-  border-bottom:1px solid var(--border);
-  position:sticky;top:0;z-index:500;
-  box-shadow:0 2px 8px rgba(0,0,0,0.06);
-}
-nav{
-  max-width:1280px;margin:0 auto;
-  padding:0 64px;height:74px;
-  display:flex;align-items:center;justify-content:space-between;
-}
-.logo{display:flex;align-items:center;gap:14px;}
-.logo-mark{
-  width:50px;height:50px;
-  background:var(--red);
-  display:flex;align-items:center;justify-content:center;
-  flex-shrink:0;
-  position:relative;
-}
-.logo-mark .inf{
-  font-size:2rem;font-weight:900;
-  color:white;line-height:1;
-  letter-spacing:-2px;
-}
-.logo-words .w1{
-  font-family:'Barlow Condensed';
-  font-size:1.1rem;font-weight:800;
-  color:var(--blue);letter-spacing:1.5px;
-  text-transform:uppercase;line-height:1;
-}
-.logo-words .w2{
-  font-size:0.62rem;font-weight:600;
-  color:var(--muted);letter-spacing:2px;
-  text-transform:uppercase;margin-top:2px;
-}
-.nav-links{
-  display:flex;align-items:center;
-  gap:2px;list-style:none;height:74px;
-}
-.nav-links li{height:74px;display:flex;align-items:center;}
-.nav-links a{
-  padding:0 18px;height:74px;
-  display:flex;align-items:center;
-  font-weight:600;font-size:0.88rem;
-  color:var(--mid);letter-spacing:0.2px;
-  border-bottom:3px solid transparent;
-  transition:all .22s;
-}
-.nav-links a:hover{color:var(--blue);border-bottom-color:var(--blue);}
-.nav-cta{
-  margin-left:10px;
-  background:var(--red) !important;color:white !important;
-  height:auto !important;padding:12px 28px !important;
-  border-bottom:none !important;border-radius:0 !important;
-  font-weight:700 !important;letter-spacing:0.5px;
-  font-family:'Barlow Condensed' !important;font-size:0.95rem !important;
-  text-transform:uppercase;
-  transition:background .2s !important;
-}
+
+/* NAV */
+header{background:var(--white);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:500;}
+nav{max-width:1200px;margin:0 auto;padding:0 40px;height:68px;display:flex;align-items:center;justify-content:space-between;}
+.logo{display:flex;align-items:center;gap:12px;}
+.logo-mark{width:44px;height:44px;background:var(--red);display:flex;align-items:center;justify-content:center;color:white;font-size:1.5rem;font-weight:900;flex-shrink:0;}
+.logo-words .w1{font-size:1rem;font-weight:700;color:var(--blue);text-transform:uppercase;letter-spacing:1px;line-height:1;}
+.logo-words .w2{font-size:0.65rem;color:var(--muted);letter-spacing:2px;text-transform:uppercase;margin-top:2px;}
+.nav-links{display:flex;align-items:center;gap:4px;list-style:none;}
+.nav-links a{padding:8px 16px;font-weight:600;font-size:0.88rem;color:var(--mid);transition:color .2s;}
+.nav-links a:hover{color:var(--blue);}
+.nav-cta{background:var(--red);color:white !important;padding:10px 24px !important;font-weight:700 !important;font-size:0.88rem !important;transition:background .2s !important;}
 .nav-cta:hover{background:var(--red2) !important;}
 
-/* ─── HERO ──────────────────────────────────────────── */
-.hero{
-  background:var(--navy);
-  min-height:600px;
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  overflow:hidden;
-  position:relative;
-}
-/* diagonal split */
-.hero::after{
-  content:'';
-  position:absolute;
-  right:0;top:0;bottom:0;
-  width:52%;
-  background:var(--navy2);
-  clip-path:polygon(8% 0,100% 0,100% 100%,0% 100%);
-  z-index:0;
-}
-.hero-left{
-  padding:90px 64px 80px;
-  display:flex;flex-direction:column;
-  justify-content:center;
-  position:relative;z-index:2;
-}
-.hero-badge{
-  display:inline-flex;align-items:center;gap:10px;
-  font-size:0.72rem;font-weight:700;letter-spacing:3.5px;
-  text-transform:uppercase;color:var(--red);
-  margin-bottom:22px;
-}
-.hero-badge::before{content:'';width:30px;height:2px;background:var(--red);}
-.hero h1{
-  font-family:'Barlow Condensed';
-  font-size:clamp(2.6rem,5vw,4.2rem);
-  font-weight:900;
-  color:var(--white);
-  line-height:1.05;
-  text-transform:uppercase;
-  letter-spacing:0.5px;
-  margin-bottom:26px;
-}
+/* HERO */
+.hero{background:var(--navy);padding:80px 0;}
+.hero-inner{max-width:1200px;margin:0 auto;padding:0 40px;}
+.hero-badge{display:inline-block;font-size:0.72rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--red);margin-bottom:18px;}
+.hero h1{font-size:clamp(2.2rem,5vw,3.6rem);font-weight:900;color:var(--white);line-height:1.1;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:22px;}
 .hero h1 .accent{color:var(--red);}
-.hero h1 .inf-word{
-  font-size:1.1em;
-  color:var(--red);
-  letter-spacing:-3px;
-}
-.hero-sub{
-  font-size:1.rem;
-  color:rgba(255,255,255,0.68);
-  line-height:1.8;
-  max-width:460px;
-  margin-bottom:40px;
-  font-weight:400;
-}
-.hero-btns{display:flex;gap:16px;flex-wrap:wrap;}
-.btn-primary{
-  background:var(--red);color:white;
-  padding:15px 36px;
-  font-family:'Barlow Condensed';font-weight:700;
-  font-size:1rem;letter-spacing:1.5px;
-  text-transform:uppercase;border:none;cursor:pointer;
-  transition:all .25s;display:inline-block;
-}
-.btn-primary:hover{background:var(--red2);transform:translateY(-2px);box-shadow:0 8px 22px rgba(200,34,0,.4);}
-.btn-ghost{
-  background:transparent;color:rgba(255,255,255,.85);
-  padding:14px 34px;
-  font-family:'Barlow Condensed';font-weight:700;
-  font-size:1rem;letter-spacing:1.5px;
-  text-transform:uppercase;
-  border:2px solid rgba(255,255,255,.35);
-  cursor:pointer;transition:all .25s;display:inline-block;
-}
-.btn-ghost:hover{border-color:rgba(255,255,255,.75);background:rgba(255,255,255,.07);}
-.hero-right{
-  position:relative;z-index:1;
-  display:flex;align-items:center;justify-content:center;
-  padding:40px 50px 40px 80px;
-}
-/* Large ∞ watermark */
-.hero-inf-bg{
-  position:absolute;
-  font-size:22rem;font-weight:900;
-  color:rgba(255,255,255,0.03);
-  line-height:1;
-  right:-20px;top:50%;
-  transform:translateY(-50%);
-  letter-spacing:-20px;
-  pointer-events:none;
-  z-index:0;
-  font-family:'Barlow Condensed';
-}
-.panel-showcase{
-  width:100%;max-width:440px;
-  position:relative;z-index:2;
-  filter:drop-shadow(0 30px 60px rgba(0,0,0,0.5));
-  animation:float 6s ease-in-out infinite;
-}
-@keyframes float{0%,100%{transform:translateY(0);}50%{transform:translateY(-12px);}}
+.hero-sub{font-size:1rem;color:rgba(255,255,255,0.7);line-height:1.8;max-width:560px;margin-bottom:36px;}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap;}
+.btn-primary{background:var(--red);color:white;padding:13px 32px;font-weight:700;font-size:0.95rem;letter-spacing:1px;text-transform:uppercase;border:none;cursor:pointer;transition:background .2s;display:inline-block;}
+.btn-primary:hover{background:var(--red2);}
+.btn-ghost{background:transparent;color:rgba(255,255,255,.85);padding:12px 30px;font-weight:700;font-size:0.95rem;letter-spacing:1px;text-transform:uppercase;border:2px solid rgba(255,255,255,.35);cursor:pointer;transition:border-color .2s;display:inline-block;}
+.btn-ghost:hover{border-color:rgba(255,255,255,.7);}
 
-/* ─── STATS BAND ─────────────────────────────────────── */
-.stats-band{
-  background:var(--red);
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-}
-.stat-item{
-  padding:28px 20px;
-  text-align:center;
-  color:white;
-  border-right:1px solid rgba(255,255,255,0.2);
-  position:relative;
-}
+/* STATS BAND */
+.stats-band{background:var(--red);display:grid;grid-template-columns:repeat(3,1fr);}
+.stat-item{padding:28px 20px;text-align:center;color:white;border-right:1px solid rgba(255,255,255,0.2);}
 .stat-item:last-child{border-right:none;}
-.stat-n{
-  font-family:'Barlow Condensed';
-  font-size:2.6rem;font-weight:900;
-  color:white;line-height:1;display:block;
-}
-.stat-l{
-  font-size:0.78rem;font-weight:600;
-  color:rgba(255,255,255,0.82);
-  letter-spacing:1.5px;text-transform:uppercase;
-  margin-top:5px;
-}
+.stat-n{font-size:2.4rem;font-weight:900;color:white;display:block;}
+.stat-l{font-size:0.78rem;font-weight:600;color:rgba(255,255,255,0.82);letter-spacing:1.5px;text-transform:uppercase;margin-top:4px;}
 
-/* ─── SECTIONS ──────────────────────────────────────── */
-.section{padding:96px 0;}
-.section-inner{max-width:1280px;margin:0 auto;padding:0 64px;}
+/* SECTIONS */
+.section{padding:80px 0;}
+.section-inner{max-width:1200px;margin:0 auto;padding:0 40px;}
 .section-alt{background:var(--off);}
+.eyebrow{display:inline-block;font-size:0.72rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--red);margin-bottom:12px;}
+.sec-title{font-size:clamp(1.8rem,3vw,2.5rem);font-weight:900;color:var(--navy);text-transform:uppercase;letter-spacing:0.5px;line-height:1.1;margin-bottom:16px;}
+.sec-sub{font-size:1rem;color:var(--mid);line-height:1.78;max-width:560px;}
 
-.eyebrow{
-  display:inline-flex;align-items:center;gap:10px;
-  font-size:0.72rem;font-weight:700;letter-spacing:3.5px;
-  text-transform:uppercase;color:var(--red);margin-bottom:14px;
-}
-.eyebrow::before{content:'';width:24px;height:2px;background:var(--red);}
-.sec-title{
-  font-family:'Barlow Condensed';
-  font-size:clamp(2rem,3.5vw,2.8rem);
-  font-weight:900;color:var(--navy);
-  text-transform:uppercase;letter-spacing:0.5px;
-  line-height:1.08;margin-bottom:18px;
-}
-.sec-sub{
-  font-size:1rem;color:var(--mid);
-  line-height:1.78;max-width:560px;
-}
-
-/* ─── SERVICES ──────────────────────────────────────── */
-.services-hd{
-  display:flex;justify-content:space-between;align-items:flex-end;
-  margin-bottom:52px;gap:40px;
-}
-.services-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:2px;background:var(--border);
-}
-.svc-card{
-  background:var(--white);
-  padding:44px 36px;
-  position:relative;overflow:hidden;
-  transition:all .32s;
-  cursor:default;
-}
-.svc-card::before{
-  content:'';position:absolute;
-  bottom:0;left:0;right:0;height:3px;
-  background:var(--red);
-  transform:scaleX(0);transform-origin:left;
-  transition:transform .35s;
-}
-.svc-card:hover{background:var(--off);transform:translateY(-4px);box-shadow:0 16px 48px rgba(0,0,0,.09);z-index:2;}
-.svc-card:hover::before{transform:scaleX(1);}
-.svc-num{
-  font-family:'Barlow Condensed';
-  font-size:3.5rem;font-weight:900;
-  color:rgba(15,35,64,.06);
-  position:absolute;top:18px;right:24px;
-  line-height:1;
-}
-.svc-icon{
-  width:58px;height:58px;
-  background:var(--light);border:1px solid var(--border);
-  display:flex;align-items:center;justify-content:center;
-  margin-bottom:24px;
-  transition:all .3s;
-}
-.svc-card:hover .svc-icon{background:var(--red);border-color:var(--red);}
-.svc-icon svg{width:28px;height:28px;stroke:var(--blue);fill:none;stroke-width:1.7;transition:stroke .3s;}
-.svc-card:hover .svc-icon svg{stroke:white;}
-.svc-card h3{
-  font-family:'Barlow Condensed';font-size:1.25rem;font-weight:800;
-  color:var(--navy);text-transform:uppercase;letter-spacing:0.5px;
-  margin-bottom:13px;
-}
+/* SERVICES */
+.services-hd{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:44px;gap:40px;flex-wrap:wrap;}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);}
+.svc-card{background:var(--white);padding:36px 30px;position:relative;transition:background .25s;}
+.svc-card:hover{background:var(--off);}
+.svc-num{font-size:3rem;font-weight:900;color:rgba(15,35,64,.05);position:absolute;top:16px;right:20px;line-height:1;}
+.svc-card h3{font-size:1.1rem;font-weight:700;color:var(--navy);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:10px;}
 .svc-card p{font-size:0.92rem;color:var(--mid);line-height:1.74;}
-.svc-link{
-  display:inline-flex;align-items:center;gap:7px;
-  margin-top:20px;font-size:0.8rem;font-weight:700;
-  color:var(--red);letter-spacing:1px;text-transform:uppercase;
-  opacity:0;transition:opacity .3s,gap .2s;
-  background:none;border:none;cursor:pointer;font-family:'Barlow',sans-serif;
-  padding:0;
-}
-.svc-card:hover .svc-link{opacity:1;}
-.svc-card:hover .svc-link{gap:11px;}
 
-/* ─── MODALS ─────────────────────────────────────────── */
-.modal-backdrop{
-  display:none;position:fixed;inset:0;
-  background:rgba(10,20,40,0.72);z-index:2000;
-  align-items:flex-start;justify-content:center;
-  padding:40px 20px;overflow-y:auto;
-  backdrop-filter:blur(3px);
-}
-.modal-backdrop.open{display:flex;}
-.modal-box{
-  background:var(--white);
-  width:100%;max-width:780px;
-  position:relative;
-  animation:modalIn .3s cubic-bezier(.34,1.56,.64,1);
-}
-@keyframes modalIn{from{opacity:0;transform:translateY(-24px) scale(.97);}to{opacity:1;transform:none;}}
-.modal-hd{
-  background:var(--navy);
-  padding:32px 40px;
-  display:flex;align-items:flex-start;justify-content:space-between;gap:20px;
-}
-.modal-hd-left{display:flex;align-items:center;gap:18px;}
-.modal-hd-icon{
-  width:54px;height:54px;background:var(--red);flex-shrink:0;
-  display:flex;align-items:center;justify-content:center;
-}
-.modal-hd-icon svg{width:26px;height:26px;stroke:white;fill:none;stroke-width:1.8;}
-.modal-hd h2{
-  font-family:'Barlow Condensed';font-size:1.7rem;font-weight:900;
-  color:white;text-transform:uppercase;letter-spacing:0.5px;
-  margin-bottom:5px;
-}
-.modal-hd p{font-size:0.88rem;color:rgba(255,255,255,.6);line-height:1.5;max-width:500px;}
-.modal-close{
-  background:rgba(255,255,255,.12);border:none;
-  width:38px;height:38px;cursor:pointer;
-  display:flex;align-items:center;justify-content:center;
-  color:white;font-size:1.4rem;flex-shrink:0;
-  transition:background .2s;line-height:1;
-}
-.modal-close:hover{background:rgba(255,255,255,.22);}
-.modal-body{padding:36px 40px;}
-.modal-section{margin-bottom:30px;}
-.modal-section:last-child{margin-bottom:0;}
-.modal-section h4{
-  font-family:'Barlow Condensed';font-size:1.05rem;font-weight:800;
-  color:var(--navy);text-transform:uppercase;letter-spacing:1px;
-  margin-bottom:14px;padding-bottom:8px;
-  border-bottom:2px solid var(--light);
-  display:flex;align-items:center;gap:8px;
-}
-.modal-section h4::before{content:'';width:18px;height:2px;background:var(--red);flex-shrink:0;}
-.modal-section p{font-size:0.93rem;color:var(--mid);line-height:1.78;margin-bottom:12px;}
-.modal-section p:last-child{margin-bottom:0;}
-.modal-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
-.modal-feat{
-  display:flex;align-items:flex-start;gap:10px;
-  font-size:0.88rem;color:var(--mid);line-height:1.6;
-  padding:12px 14px;background:var(--off);
-}
-.modal-feat-dot{width:8px;height:8px;background:var(--red);flex-shrink:0;margin-top:4px;}
-.modal-specs{
-  display:grid;grid-template-columns:repeat(3,1fr);gap:2px;
-  background:var(--border);margin-top:14px;
-}
-.modal-spec{
-  background:var(--white);padding:16px 18px;
-  border-left:3px solid var(--red);
-}
-.modal-spec .sl{font-size:0.68rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:4px;}
-.modal-spec .sv{font-size:0.95rem;font-weight:700;color:var(--navy);}
-.modal-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;}
-.modal-tag{
-  background:var(--light);color:var(--blue);
-  font-size:0.72rem;font-weight:700;letter-spacing:1px;
-  text-transform:uppercase;padding:5px 12px;
-}
-.modal-ft{
-  padding:22px 40px;background:var(--off);
-  border-top:1px solid var(--border);
-  display:flex;align-items:center;justify-content:space-between;gap:20px;
-  flex-wrap:wrap;
-}
-.modal-ft p{font-size:0.85rem;color:var(--mid);}
-.modal-ft a{background:var(--red);color:white;padding:12px 28px;font-family:'Barlow Condensed';font-weight:800;font-size:0.95rem;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;transition:background .2s;flex-shrink:0;}
-.modal-ft a:hover{background:var(--red2);}
-@media(max-width:640px){
-  .modal-hd{padding:24px;}
-  .modal-body{padding:24px;}
-  .modal-grid{grid-template-columns:1fr;}
-  .modal-specs{grid-template-columns:1fr 1fr;}
-  .modal-ft{padding:18px 24px;}
-}
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center;}
+.about-panel{background:var(--navy);padding:40px;color:white;}
+.about-panel-title{font-size:1.4rem;font-weight:900;text-transform:uppercase;letter-spacing:2px;color:var(--red);margin-bottom:8px;}
+.about-panel-sub{font-size:0.78rem;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:28px;}
+.panel-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:rgba(255,255,255,.08);}
+.panel-cell{background:var(--navy2);padding:16px;font-size:0.82rem;color:rgba(255,255,255,.6);}
+.panel-cell strong{display:block;font-size:0.7rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--red);margin-bottom:4px;}
+.exp-row{display:flex;gap:2px;margin-top:2px;}
+.exp-box{background:var(--red);padding:16px 20px;text-align:center;color:white;flex:1;}
+.exp-box .exp-n{font-size:2.2rem;font-weight:900;display:block;line-height:1;}
+.exp-box .exp-t{font-size:0.65rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;opacity:.9;margin-top:2px;}
+.about-text .sec-sub{max-width:100%;margin-bottom:28px;}
+.checklist{list-style:none;margin-bottom:32px;}
+.checklist li{display:flex;align-items:center;gap:10px;font-size:0.9rem;color:var(--mid);font-weight:500;padding:8px 0;border-bottom:1px solid var(--border);}
+.checklist li:last-child{border-bottom:none;}
+.chk{width:18px;height:18px;background:var(--red);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:white;font-size:0.7rem;font-weight:900;}
 
-/* ─── ABOUT ──────────────────────────────────────────── */
-.about-grid{
-  display:grid;grid-template-columns:1fr 1fr;
-  gap:80px;align-items:center;
-}
-.about-visual{position:relative;}
-.panel-frame{
-  width:100%;aspect-ratio:4/3;
-  background:var(--navy);
-  overflow:hidden;position:relative;
-}
-.panel-frame svg{width:100%;height:100%;}
-.exp-badge{
-  position:absolute;bottom:-26px;right:-26px;
-  width:136px;height:136px;
-  background:var(--red);
-  display:flex;flex-direction:column;
-  align-items:center;justify-content:center;
-  color:white;
-  box-shadow:0 16px 48px rgba(0,0,0,.2);
-}
-.exp-n{font-family:'Barlow Condensed';font-size:2.8rem;font-weight:900;line-height:1;}
-.exp-t{font-size:0.68rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;text-align:center;opacity:.9;margin-top:3px;}
-
-.about-text .sec-sub{max-width:100%;margin-bottom:30px;}
-.checklist{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:36px;}
-.checklist li{
-  display:flex;align-items:flex-start;gap:10px;
-  font-size:0.9rem;color:var(--mid);font-weight:500;
-}
-.chk{
-  width:18px;height:18px;background:var(--red);
-  display:flex;align-items:center;justify-content:center;
-  flex-shrink:0;margin-top:1px;
-}
-.chk svg{width:10px;height:10px;stroke:white;fill:none;stroke-width:3;}
-
-/* ─── PRODUCTS ───────────────────────────────────────── */
-.products-grid{
-  display:grid;grid-template-columns:repeat(4,1fr);gap:20px;
-}
-.prod-card{
-  background:var(--white);border:1px solid var(--border);
-  overflow:hidden;transition:all .3s;
-  cursor:default;
-}
-.prod-card:hover{box-shadow:0 16px 48px rgba(0,0,0,.11);transform:translateY(-5px);}
-.prod-vis{
-  height:180px;background:var(--navy);
-  display:flex;align-items:center;justify-content:center;
-  overflow:hidden;position:relative;
-}
-.prod-vis svg{width:140px;height:140px;transition:transform .4s;}
-.prod-card:hover .prod-vis svg{transform:scale(1.08);}
-.prod-tag{
-  position:absolute;top:12px;left:12px;
-  background:var(--red);color:white;
-  font-size:0.66rem;font-weight:700;
-  letter-spacing:1.5px;text-transform:uppercase;
-  padding:4px 11px;
-}
-.prod-body{padding:22px 22px 24px;}
-.prod-body h4{
-  font-family:'Barlow Condensed';font-size:1.1rem;font-weight:800;
-  color:var(--navy);text-transform:uppercase;letter-spacing:0.3px;
-  margin-bottom:9px;line-height:1.2;
-}
-.prod-body p{font-size:0.86rem;color:var(--mid);line-height:1.65;}
-
-/* ─── WHY ────────────────────────────────────────────── */
-.why-grid{
-  display:grid;grid-template-columns:repeat(3,1fr);gap:24px;
-}
-.why-card{
-  padding:36px 30px;
-  border:1px solid var(--border);
-  background:var(--white);
-  position:relative;
-  transition:all .3s;
-}
-.why-card:hover{border-color:var(--red);box-shadow:0 8px 32px rgba(0,0,0,.07);}
-.why-n{
-  font-family:'Barlow Condensed';font-size:3.2rem;font-weight:900;
-  color:rgba(15,35,64,.07);line-height:1;margin-bottom:14px;
-}
-.why-card h4{
-  font-family:'Barlow Condensed';font-size:1.12rem;font-weight:800;
-  color:var(--navy);text-transform:uppercase;letter-spacing:0.5px;
-  margin-bottom:11px;
-}
-.why-card p{font-size:0.9rem;color:var(--mid);line-height:1.74;}
-
-/* ─── INDUSTRIES ─────────────────────────────────────── */
-.industries-section{
-  background:var(--navy);
-  padding:80px 0;
-  position:relative;overflow:hidden;
-}
-.industries-section::before{
-  content:'∞';
-  position:absolute;right:-40px;top:50%;transform:translateY(-50%);
-  font-family:'Barlow Condensed';font-size:28rem;font-weight:900;
-  color:rgba(255,255,255,0.025);line-height:1;letter-spacing:-20px;
-  pointer-events:none;
-}
-.industries-inner{max-width:1280px;margin:0 auto;padding:0 64px;}
+/* INDUSTRIES */
+.industries-section{background:var(--navy);padding:80px 0;}
+.industries-inner{max-width:1200px;margin:0 auto;padding:0 40px;}
 .industries-inner .eyebrow{color:rgba(255,255,255,.5);}
-.industries-inner .eyebrow::before{background:var(--red);}
 .industries-inner .sec-title{color:white;}
-.industries-grid{
-  display:grid;grid-template-columns:repeat(4,1fr);gap:2px;
-  background:rgba(255,255,255,.08);margin-top:48px;
-}
-.ind-item{
-  background:var(--navy2);
-  padding:32px 28px;
-  transition:background .25s;
-  cursor:default;
-}
+.industries-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.08);margin-top:44px;}
+.ind-item{background:var(--navy2);padding:28px 24px;transition:background .25s;}
 .ind-item:hover{background:rgba(204,34,0,.15);}
-.ind-icon{
-  width:46px;height:46px;
-  border:1px solid rgba(255,255,255,.15);
-  display:flex;align-items:center;justify-content:center;
-  margin-bottom:16px;
-  transition:border-color .25s;
-}
-.ind-item:hover .ind-icon{border-color:var(--red);}
-.ind-icon svg{width:22px;height:22px;stroke:rgba(255,255,255,.6);fill:none;stroke-width:1.7;transition:stroke .25s;}
-.ind-item:hover .ind-icon svg{stroke:var(--red);}
-.ind-item h5{
-  font-family:'Barlow Condensed';font-size:1rem;font-weight:700;
-  color:white;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:7px;
-}
+.ind-item h5{font-size:0.95rem;font-weight:700;color:white;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;}
 .ind-item p{font-size:0.83rem;color:rgba(255,255,255,.5);line-height:1.65;}
 
-/* ─── CTA BAND ───────────────────────────────────────── */
-.cta-band{
-  background:linear-gradient(135deg,var(--blue) 0%,var(--navy) 100%);
-  padding:74px 0;position:relative;overflow:hidden;
-}
-.cta-band::before{
-  content:'';position:absolute;
-  right:-80px;top:-80px;
-  width:320px;height:320px;
-  border:60px solid rgba(255,255,255,.04);border-radius:50%;
-}
-.cta-inner{
-  max-width:1280px;margin:0 auto;padding:0 64px;
-  display:grid;grid-template-columns:1fr auto;
-  gap:48px;align-items:center;
-}
-.cta-inner h2{
-  font-family:'Barlow Condensed';
-  font-size:clamp(1.8rem,3vw,2.6rem);
-  font-weight:900;color:white;
-  text-transform:uppercase;letter-spacing:0.5px;margin-bottom:10px;
-}
+/* WHY */
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.why-card{padding:32px 26px;border:1px solid var(--border);background:var(--white);}
+.why-n{font-size:3rem;font-weight:900;color:rgba(15,35,64,.07);line-height:1;margin-bottom:12px;}
+.why-card h4{font-size:1.05rem;font-weight:700;color:var(--navy);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:10px;}
+.why-card p{font-size:0.9rem;color:var(--mid);line-height:1.74;}
+
+/* CTA BAND */
+.cta-band{background:var(--blue);padding:64px 0;}
+.cta-inner{max-width:1200px;margin:0 auto;padding:0 40px;display:flex;justify-content:space-between;align-items:center;gap:40px;flex-wrap:wrap;}
+.cta-inner h2{font-size:clamp(1.6rem,2.8vw,2.2rem);font-weight:900;color:white;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px;}
 .cta-inner p{color:rgba(255,255,255,.65);font-size:1rem;}
 
-/* ─── CONTACT ────────────────────────────────────────── */
-.contact-grid{
-  display:grid;grid-template-columns:5fr 7fr;gap:60px;
-}
-.c-info-block{
-  background:var(--navy);
-  padding:52px 46px;color:white;
-}
-.c-info-block h3{
-  font-family:'Barlow Condensed';font-size:1.7rem;font-weight:900;
-  text-transform:uppercase;color:white;margin-bottom:10px;
-}
-.c-tagline{font-size:0.9rem;color:rgba(255,255,255,.6);margin-bottom:44px;line-height:1.7;}
-.c-item{
-  display:flex;align-items:flex-start;gap:16px;
-  padding:22px 0;border-bottom:1px solid rgba(255,255,255,.1);
-}
+/* CONTACT */
+.contact-grid{display:grid;grid-template-columns:5fr 7fr;gap:50px;}
+.c-info-block{background:var(--navy);padding:44px 38px;color:white;}
+.c-info-block h3{font-size:1.5rem;font-weight:900;text-transform:uppercase;color:white;margin-bottom:8px;}
+.c-tagline{font-size:0.9rem;color:rgba(255,255,255,.6);margin-bottom:36px;line-height:1.7;}
+.c-item{display:flex;align-items:flex-start;gap:14px;padding:18px 0;border-bottom:1px solid rgba(255,255,255,.1);}
 .c-item:first-of-type{border-top:1px solid rgba(255,255,255,.1);}
-.c-ico{
-  width:44px;height:44px;
-  background:rgba(255,255,255,.08);
-  display:flex;align-items:center;justify-content:center;flex-shrink:0;
-}
-.c-ico svg{width:20px;height:20px;stroke:white;fill:none;stroke-width:1.8;}
-.c-lbl{font-size:0.68rem;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--red);margin-bottom:4px;}
-.c-val{font-size:0.98rem;color:white;font-weight:500;}
-.c-val a{color:white;transition:opacity .2s;}
-.c-val a:hover{opacity:.7;}
-
-.c-form-block{
-  background:var(--white);
-  padding:52px 46px;
-  border:1px solid var(--border);
-}
-.c-form-block h3{
-  font-family:'Barlow Condensed';font-size:1.6rem;font-weight:900;
-  text-transform:uppercase;color:var(--navy);margin-bottom:32px;
-}
-.form-row{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
-.fg{display:flex;flex-direction:column;gap:7px;margin-bottom:20px;}
+.c-lbl{font-size:0.68rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--red);margin-bottom:3px;}
+.c-val{font-size:0.95rem;color:white;font-weight:500;}
+.c-val a{color:white;}
+.c-form-block{background:var(--white);padding:44px 38px;border:1px solid var(--border);}
+.c-form-block h3{font-size:1.4rem;font-weight:900;text-transform:uppercase;color:var(--navy);margin-bottom:28px;}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+.fg{display:flex;flex-direction:column;gap:6px;margin-bottom:18px;}
 .fg label{font-size:0.72rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--text);}
-.fg input,.fg select,.fg textarea{
-  width:100%;
-  border:1px solid var(--border);background:var(--off);
-  color:var(--text);
-  font-family:'Barlow',sans-serif;font-size:0.95rem;
-  padding:12px 16px;outline:none;
-  border-radius:0;-webkit-appearance:none;transition:border-color .2s,box-shadow .2s;
-}
-.fg input:focus,.fg select:focus,.fg textarea:focus{
-  border-color:var(--blue);background:var(--white);
-  box-shadow:0 0 0 3px rgba(26,58,107,.08);
-}
-.fg textarea{min-height:115px;resize:vertical;}
-.fg select{
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%234e5d78' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
-  background-repeat:no-repeat;background-position:right 14px center;padding-right:40px;cursor:pointer;
-}
+.fg input,.fg select,.fg textarea{width:100%;border:1px solid var(--border);background:var(--off);color:var(--text);font-family:Arial,sans-serif;font-size:0.95rem;padding:11px 14px;outline:none;transition:border-color .2s;}
+.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--blue);background:var(--white);}
+.fg textarea{min-height:110px;resize:vertical;}
+.fg select{cursor:pointer;}
 .fg.full{grid-column:span 2;}
-.form-submit{
-  width:100%;padding:15px;
-  background:var(--red);color:white;border:none;cursor:pointer;
-  font-family:'Barlow Condensed';font-weight:800;font-size:1.1rem;
-  letter-spacing:2px;text-transform:uppercase;
-  transition:all .25s;
-}
-.form-submit:hover{background:var(--red2);transform:translateY(-1px);box-shadow:0 8px 22px rgba(200,34,0,.35);}
-.form-note{font-size:0.8rem;color:var(--muted);text-align:center;margin-top:12px;}
+.form-submit{width:100%;padding:14px;background:var(--red);color:white;border:none;cursor:pointer;font-weight:800;font-size:1rem;letter-spacing:1.5px;text-transform:uppercase;transition:background .2s;}
+.form-submit:hover{background:var(--red2);}
+.form-note{font-size:0.8rem;color:var(--muted);text-align:center;margin-top:10px;}
 
-/* Toast */
-.toast{
-  position:fixed;bottom:32px;right:32px;
-  background:var(--navy);color:white;
-  padding:16px 24px;font-weight:600;font-size:0.92rem;
-  box-shadow:0 12px 40px rgba(0,0,0,.3);
-  transform:translateY(120px);opacity:0;
-  transition:all .4s cubic-bezier(0.34,1.56,0.64,1);
-  z-index:1000;display:flex;align-items:center;gap:12px;
-}
+/* TOAST */
+.toast{position:fixed;bottom:28px;right:28px;background:var(--navy);color:white;padding:14px 22px;font-weight:600;font-size:0.9rem;box-shadow:0 8px 28px rgba(0,0,0,.25);transform:translateY(100px);opacity:0;transition:all .4s;z-index:1000;}
 .toast.show{transform:translateY(0);opacity:1;}
-.toast-dot{width:10px;height:10px;background:var(--red);border-radius:50%;flex-shrink:0;}
 
-/* ─── FOOTER ─────────────────────────────────────────── */
+/* FOOTER */
 footer{background:#0b1a2e;color:rgba(255,255,255,.55);}
-.foot-top{
-  max-width:1280px;margin:0 auto;padding:62px 64px 52px;
-  display:grid;grid-template-columns:1.8fr 1fr 1fr;gap:50px;
-  border-bottom:1px solid rgba(255,255,255,.07);
-}
-.foot-brand .f-logo{display:flex;align-items:center;gap:14px;margin-bottom:20px;}
-.foot-brand .f-logo .logo-mark{width:44px;height:44px;}
-.foot-brand p{font-size:0.88rem;line-height:1.78;color:rgba(255,255,255,.45);max-width:300px;}
-.foot-col h5{
-  font-family:'Barlow Condensed';font-size:0.8rem;font-weight:700;
-  letter-spacing:2.5px;text-transform:uppercase;
-  color:white;margin-bottom:18px;
-}
+.foot-top{max-width:1200px;margin:0 auto;padding:56px 40px 46px;display:grid;grid-template-columns:1.8fr 1fr 1fr;gap:44px;border-bottom:1px solid rgba(255,255,255,.07);}
+.foot-brand p{font-size:0.88rem;line-height:1.78;color:rgba(255,255,255,.45);max-width:300px;margin-top:16px;}
+.foot-col h5{font-size:0.8rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:white;margin-bottom:16px;}
 .foot-col ul{list-style:none;}
-.foot-col ul li{padding:5px 0;font-size:0.87rem;color:rgba(255,255,255,.45);cursor:pointer;transition:color .2s;}
-.foot-col ul li:hover{color:white;}
+.foot-col ul li{padding:4px 0;font-size:0.87rem;color:rgba(255,255,255,.45);}
 .foot-col ul a{color:rgba(255,255,255,.45);transition:color .2s;}
 .foot-col ul a:hover{color:white;}
-.foot-bot{
-  max-width:1280px;margin:0 auto;padding:22px 64px;
-  display:flex;justify-content:space-between;align-items:center;
-  font-size:0.8rem;flex-wrap:wrap;gap:12px;
-}
-.foot-inf{
-  font-size:1.4rem;color:rgba(204,34,0,.5);
-  font-family:'Barlow Condensed';font-weight:900;
-}
+.foot-bot{max-width:1200px;margin:0 auto;padding:20px 40px;display:flex;justify-content:space-between;align-items:center;font-size:0.8rem;flex-wrap:wrap;gap:10px;}
 
-/* ─── REVEAL ANIMATIONS ──────────────────────────────── */
-.reveal{opacity:0;transform:translateY(28px);transition:opacity .65s ease,transform .65s ease;}
-.reveal.in{opacity:1;transform:translateY(0);}
-.reveal-left{opacity:0;transform:translateX(-30px);transition:opacity .65s ease,transform .65s ease;}
-.reveal-left.in{opacity:1;transform:translateX(0);}
-.reveal-right{opacity:0;transform:translateX(30px);transition:opacity .65s ease,transform .65s ease;}
-.reveal-right.in{opacity:1;transform:translateX(0);}
-
-/* ─── RESPONSIVE ─────────────────────────────────────── */
-@media(max-width:1100px){
-  nav,.topbar,.section-inner,.industries-inner,.cta-inner,.foot-top,.foot-bot{padding-left:32px;padding-right:32px;}
-  .hero-left{padding:70px 32px;}
-  .products-grid{grid-template-columns:repeat(2,1fr);}
-  .services-grid{grid-template-columns:repeat(2,1fr);}
+/* RESPONSIVE */
+@media(max-width:900px){
+  nav,.section-inner,.industries-inner,.cta-inner,.foot-top,.foot-bot{padding-left:24px;padding-right:24px;}
+  .hero-inner{padding:0 24px;}
+  .services-grid{grid-template-columns:1fr 1fr;}
   .industries-grid{grid-template-columns:repeat(2,1fr);}
-  .foot-top{grid-template-columns:1fr 1fr;}
-}
-@media(max-width:768px){
-  .hero{grid-template-columns:1fr;min-height:auto;}
-  .hero::after{display:none;}
-  .hero-right{display:none;}
-  .nav-links{display:none;}
-  .about-grid{grid-template-columns:1fr;gap:44px;}
-  .exp-badge{right:0;}
-  .why-grid{grid-template-columns:1fr;}
+  .about-grid{grid-template-columns:1fr;gap:40px;}
+  .why-grid{grid-template-columns:1fr 1fr;}
   .contact-grid{grid-template-columns:1fr;}
-  .products-grid{grid-template-columns:1fr 1fr;}
+  .foot-top{grid-template-columns:1fr 1fr;}
+  .stats-band{grid-template-columns:repeat(3,1fr);}
+}
+@media(max-width:600px){
+  .nav-links{display:none;}
   .services-grid{grid-template-columns:1fr;}
-  .stats-band{grid-template-columns:repeat(2,1fr);}
-  .cta-inner{grid-template-columns:1fr;}
+  .why-grid{grid-template-columns:1fr;}
   .form-row{grid-template-columns:1fr;}
   .fg.full{grid-column:span 1;}
-  .foot-top{grid-template-columns:1fr;gap:36px;}
+  .foot-top{grid-template-columns:1fr;}
+  .stats-band{grid-template-columns:1fr;}
+  .stat-item{border-right:none;border-bottom:1px solid rgba(255,255,255,.2);}
+  .stat-item:last-child{border-bottom:none;}
+  .industries-grid{grid-template-columns:1fr 1fr;}
 }
 </style>
 </head>
 <body>
 
-<!-- TOPBAR -->
-<div class="topbar">
-  <div>∞ Infinite Control Panel System Inc. — Custom Manufacturing Specialists</div>
-  <div class="tb-r">
-    <span>Mon–Fri 8:00 AM – 5:00 PM</span>
-    <span class="tb-dot">◆</span>
-    <a href="mailto:deeppatel0839@gmail.com">deeppatel0839@gmail.com</a>
-  </div>
-</div>
-
 <!-- NAV -->
 <header>
   <nav>
     <div class="logo">
-      <div class="logo-mark"><span class="inf">∞</span></div>
+      <div class="logo-mark">∞</div>
       <div class="logo-words">
         <div class="w1">Infinite Control Panel</div>
         <div class="w2">System Inc.</div>
@@ -728,7 +197,6 @@ footer{background:#0b1a2e;color:rgba(255,255,255,.55);}
     <ul class="nav-links">
       <li><a href="#services">Services</a></li>
       <li><a href="#about">About</a></li>
-      <li><a href="#products">Products</a></li>
       <li><a href="#industries">Industries</a></li>
       <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
     </ul>
@@ -737,116 +205,13 @@ footer{background:#0b1a2e;color:rgba(255,255,255,.55);}
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-left">
+  <div class="hero-inner">
     <div class="hero-badge">Custom Manufacturing Specialists</div>
-    <h1>
-      <span class="inf-word">∞</span><br>
-      <span class="accent">Control</span> Panel<br>Solutions Built<br>to Spec
-    </h1>
-    <p class="hero-sub">
-      Infinite Control Panel System Inc. engineers and manufactures precision industrial control panels — from custom single units to large production runs, built exactly to your specifications.
-    </p>
+    <h1>∞ <span class="accent">Control</span> Panel<br>Solutions Built to Spec</h1>
+    <p class="hero-sub">Infinite Control Panel System Inc. engineers and manufactures precision industrial control panels — from custom single units to large production runs, built exactly to your specifications.</p>
     <div class="hero-btns">
       <a href="#contact" class="btn-primary">Request a Quote</a>
       <a href="#services" class="btn-ghost">Our Services</a>
-    </div>
-  </div>
-  <div class="hero-right">
-    <div class="hero-inf-bg">∞</div>
-    <!-- Hero panel SVG -->
-    <div class="panel-showcase">
-      <svg viewBox="0 0 420 380" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="8" y="8" width="404" height="364" rx="3" fill="#1e3254" stroke="#2a4a72" stroke-width="1.5"/>
-        <rect x="16" y="16" width="388" height="40" fill="#162e50" stroke="#2a4570" stroke-width="0.8"/>
-        <circle cx="36" cy="36" r="7" fill="#28c76f" opacity="0.9"/><circle cx="36" cy="36" r="3.5" fill="#28c76f"/>
-        <text x="214" y="41" font-family="monospace" font-size="10.5" fill="#e0eaf8" text-anchor="middle" letter-spacing="3" font-weight="700">∞ MAIN CONTROL PANEL</text>
-        <circle cx="384" cy="36" r="7" fill="#ea5455" opacity="0.3" stroke="#ea5455" stroke-width="1"/>
-        <!-- Gauge 1 -->
-        <rect x="20" y="68" width="118" height="112" rx="2" fill="#122030" stroke="#223650" stroke-width="1"/>
-        <circle cx="79" cy="118" r="36" stroke="#3a6090" stroke-width="1.8" fill="#0e1e2e"/>
-        <circle cx="79" cy="118" r="24" stroke="#243050" stroke-width="0.8" fill="none"/>
-        <path d="M 54 140 A 36 36 0 1 1 104 140" stroke="#4a90d9" stroke-width="1" fill="none"/>
-        <line x1="79" y1="82" x2="79" y2="94" stroke="#4a90d9" stroke-width="1.8"/>
-        <line x1="106" y1="91" x2="100" y2="100" stroke="#4a90d9" stroke-width="1.4"/>
-        <line x1="115" y1="118" x2="103" y2="118" stroke="#4a90d9" stroke-width="1.8"/>
-        <line x1="52" y1="91" x2="58" y2="100" stroke="#4a90d9" stroke-width="1.4"/>
-        <line x1="43" y1="118" x2="55" y2="118" stroke="#4a90d9" stroke-width="1.8"/>
-        <line x1="79" y1="88" x2="79" y2="118" stroke="#cc2200" stroke-width="2.2" transform="rotate(-42 79 118)"/>
-        <circle cx="79" cy="118" r="4.5" fill="#4a90d9"/>
-        <text x="79" y="158" font-family="monospace" font-size="8" fill="#7a9abc" text-anchor="middle">CURRENT</text>
-        <!-- Gauge 2 -->
-        <rect x="150" y="68" width="118" height="112" rx="2" fill="#122030" stroke="#223650" stroke-width="1"/>
-        <circle cx="209" cy="118" r="36" stroke="#ea5455" stroke-width="1.8" fill="#0e1e2e"/>
-        <circle cx="209" cy="118" r="24" stroke="#243050" stroke-width="0.8" fill="none"/>
-        <path d="M 184 140 A 36 36 0 1 1 234 140" stroke="#ea5455" stroke-width="1" fill="none"/>
-        <line x1="209" y1="82" x2="209" y2="94" stroke="#ea5455" stroke-width="1.8"/>
-        <line x1="236" y1="91" x2="230" y2="100" stroke="#ea5455" stroke-width="1.4"/>
-        <line x1="245" y1="118" x2="233" y2="118" stroke="#ea5455" stroke-width="1.8"/>
-        <line x1="182" y1="91" x2="188" y2="100" stroke="#ea5455" stroke-width="1.4"/>
-        <line x1="173" y1="118" x2="185" y2="118" stroke="#ea5455" stroke-width="1.8"/>
-        <line x1="209" y1="88" x2="209" y2="118" stroke="#f8a73c" stroke-width="2.2" transform="rotate(55 209 118)"/>
-        <circle cx="209" cy="118" r="4.5" fill="#ea5455"/>
-        <text x="209" y="158" font-family="monospace" font-size="8" fill="#7a9abc" text-anchor="middle">VOLTAGE</text>
-        <!-- Digital readout -->
-        <rect x="280" y="68" width="132" height="112" rx="2" fill="#070f18" stroke="#1e3050" stroke-width="1"/>
-        <rect x="288" y="76" width="116" height="96" rx="1" fill="#040c14" stroke="#162840" stroke-width="0.8"/>
-        <text x="346" y="92" font-family="monospace" font-size="8" fill="#4a90d9" text-anchor="middle" letter-spacing="2">STATUS</text>
-        <line x1="290" y1="97" x2="398" y2="97" stroke="#162840" stroke-width="0.5"/>
-        <text x="294" y="111" font-family="monospace" font-size="8.5" fill="#28c76f">● ONLINE</text>
-        <text x="294" y="127" font-family="monospace" font-size="8.5" fill="#4a90d9">● 76.3%</text>
-        <text x="294" y="143" font-family="monospace" font-size="8.5" fill="#f8a73c">● 44°C</text>
-        <text x="294" y="159" font-family="monospace" font-size="8.5" fill="#28c76f">● 1247h</text>
-        <!-- Buttons row -->
-        <rect x="20" y="192" width="392" height="56" rx="2" fill="#0e1c2c" stroke="#1e3048" stroke-width="1"/>
-        <rect x="36" y="206" width="56" height="24" rx="1" fill="#1a4028" stroke="#28c76f" stroke-width="1"/>
-        <text x="64" y="221" font-family="monospace" font-size="8.5" fill="#28c76f" text-anchor="middle">START</text>
-        <rect x="100" y="206" width="56" height="24" rx="1" fill="#401818" stroke="#ea5455" stroke-width="1"/>
-        <text x="128" y="221" font-family="monospace" font-size="8.5" fill="#ea5455" text-anchor="middle">STOP</text>
-        <rect x="164" y="206" width="56" height="24" rx="1" fill="#1a2840" stroke="#4a90d9" stroke-width="1"/>
-        <text x="192" y="221" font-family="monospace" font-size="8.5" fill="#4a90d9" text-anchor="middle">RESET</text>
-        <rect x="248" y="204" width="30" height="16" rx="8" fill="#1e3050" stroke="#4a90d9" stroke-width="1.5"/>
-        <circle cx="272" cy="212" r="6" fill="#4a90d9"/>
-        <text x="283" y="220" font-family="monospace" font-size="7" fill="#4a90d9">AUTO</text>
-        <rect x="320" y="204" width="30" height="16" rx="8" fill="#1e3050" stroke="#28c76f" stroke-width="1.5"/>
-        <circle cx="324" cy="212" r="6" fill="#28c76f" opacity="0.7"/>
-        <text x="355" y="220" font-family="monospace" font-size="7" fill="#28c76f">ON</text>
-        <!-- Breakers -->
-        <rect x="20" y="260" width="188" height="96" rx="2" fill="#0e1c2c" stroke="#1e3048" stroke-width="1"/>
-        <text x="114" y="276" font-family="monospace" font-size="8" fill="#4a90d9" text-anchor="middle" letter-spacing="2">BREAKERS</text>
-        <rect x="30" y="282" width="20" height="42" rx="1.5" fill="#1a3040" stroke="#2a4a60" stroke-width="1"/>
-        <rect x="33" y="286" width="14" height="12" rx="1" fill="#0a1c2e"/><rect x="35" y="302" width="10" height="18" rx="1" fill="#4a90d9" opacity="0.65"/>
-        <text x="40" y="333" font-family="monospace" font-size="6.5" fill="#6a9abc" text-anchor="middle">L1</text>
-        <rect x="56" y="282" width="20" height="42" rx="1.5" fill="#1a3040" stroke="#2a4a60" stroke-width="1"/>
-        <rect x="59" y="286" width="14" height="12" rx="1" fill="#0a1c2e"/><rect x="61" y="302" width="10" height="18" rx="1" fill="#4a90d9" opacity="0.65"/>
-        <text x="66" y="333" font-family="monospace" font-size="6.5" fill="#6a9abc" text-anchor="middle">L2</text>
-        <rect x="82" y="282" width="20" height="42" rx="1.5" fill="#1a3040" stroke="#2a4a60" stroke-width="1"/>
-        <rect x="85" y="286" width="14" height="12" rx="1" fill="#0a1c2e"/><rect x="87" y="302" width="10" height="18" rx="1" fill="#4a90d9" opacity="0.65"/>
-        <text x="92" y="333" font-family="monospace" font-size="6.5" fill="#6a9abc" text-anchor="middle">L3</text>
-        <rect x="112" y="282" width="26" height="42" rx="1.5" fill="#2a1020" stroke="#4a2030" stroke-width="1"/>
-        <rect x="115" y="286" width="20" height="12" rx="1" fill="#1a0a18"/><rect x="117" y="302" width="16" height="18" rx="1" fill="#ea5455" opacity="0.5"/>
-        <text x="125" y="333" font-family="monospace" font-size="6.5" fill="#ea7070" text-anchor="middle">MAIN</text>
-        <!-- Terminal/wiring -->
-        <rect x="216" y="260" width="196" height="96" rx="2" fill="#0e1c2c" stroke="#1e3048" stroke-width="1"/>
-        <text x="314" y="276" font-family="monospace" font-size="8" fill="#4a90d9" text-anchor="middle" letter-spacing="1">TERMINAL BLOCK</text>
-        <rect x="224" y="285" width="9" height="26" rx="0.5" fill="#1a3050" stroke="#2a4060" stroke-width="0.5"/>
-        <rect x="226" y="287" width="5" height="9" rx="0.3" fill="#4a90d9" opacity="0.55"/>
-        <rect x="237" y="285" width="9" height="26" rx="0.5" fill="#1a3050" stroke="#2a4060" stroke-width="0.5"/>
-        <rect x="239" y="287" width="5" height="9" rx="0.3" fill="#28c76f" opacity="0.55"/>
-        <rect x="250" y="285" width="9" height="26" rx="0.5" fill="#1a3050" stroke="#2a4060" stroke-width="0.5"/>
-        <rect x="252" y="287" width="5" height="9" rx="0.3" fill="#ea5455" opacity="0.55"/>
-        <rect x="263" y="285" width="9" height="26" rx="0.5" fill="#1a3050" stroke="#2a4060" stroke-width="0.5"/>
-        <rect x="265" y="287" width="5" height="9" rx="0.3" fill="#f8a73c" opacity="0.55"/>
-        <rect x="276" y="285" width="9" height="26" rx="0.5" fill="#1a3050" stroke="#2a4060" stroke-width="0.5"/>
-        <rect x="278" y="287" width="5" height="9" rx="0.3" fill="#4a90d9" opacity="0.55"/>
-        <path d="M 300 285 L 300 356" stroke="#c0781e" stroke-width="3" opacity="0.38"/>
-        <path d="M 312 285 L 312 356" stroke="#4a90d9" stroke-width="3" opacity="0.38"/>
-        <path d="M 324 285 L 324 356" stroke="#28c76f" stroke-width="3" opacity="0.38"/>
-        <path d="M 336 285 L 336 356" stroke="#ea5455" stroke-width="3" opacity="0.38"/>
-        <path d="M 348 285 L 348 356" stroke="#c0781e" stroke-width="3" opacity="0.38"/>
-        <!-- Bottom label -->
-        <rect x="20" y="358" width="392" height="14" rx="0.5" fill="#0a1420" stroke="#1a2e40" stroke-width="0.5"/>
-        <text x="214" y="369" font-family="monospace" font-size="7" fill="rgba(74,144,217,0.4)" text-anchor="middle" letter-spacing="2">∞ INFINITE CONTROL PANEL SYSTEM INC.</text>
-      </svg>
     </div>
   </div>
 </section>
@@ -869,32 +234,31 @@ footer{background:#0b1a2e;color:rgba(255,255,255,.55);}
       <p class="sec-sub" style="max-width:360px;">Every panel is engineered from scratch, assembled in-house, and fully tested before it leaves our facility.</p>
     </div>
     <div class="services-grid">
-      <div class="svc-card reveal">
+      <div class="svc-card">
         <div class="svc-num">01</div>
-        <div class="svc-icon"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="1"/><circle cx="8" cy="8" r="2.5"/><circle cx="16" cy="8" r="2.5"/><rect x="4" y="14" width="7" height="5" rx="0.5"/><rect x="13" y="14" width="7" height="5" rx="0.5"/></svg></div>
         <h3>Custom Control Panels</h3>
         <p>Fully engineered panels designed to your exact load requirements, environment, and operating conditions. Every unit is uniquely crafted.</p>
-        <button class="svc-link" onclick="openModal('modal-svc1')">Learn More →</button>
-      <div class="svc-card reveal">
+      </div>
+      <div class="svc-card">
+        <div class="svc-num">02</div>
+        <h3>Automation Panels</h3>
+        <p>PLC-based automation panels integrating process control logic, HMI interfaces, and communication protocols for modern industrial systems.</p>
+      </div>
+      <div class="svc-card">
         <div class="svc-num">03</div>
-        <div class="svc-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><line x1="12" y1="3" x2="12" y2="8"/><line x1="12" y1="16" x2="12" y2="21"/><line x1="3" y1="12" x2="8" y2="12"/><line x1="16" y1="12" x2="21" y2="12"/></svg></div>
         <h3>Motor Control Centers</h3>
         <p>Centralized MCC assemblies for multi-motor management with protective relays, starters, circuit breakers, and bus bar distribution.</p>
-        <button class="svc-link" onclick="openModal('modal-svc3')">Learn More →</button>
       </div>
-      <div class="svc-card reveal">
+      <div class="svc-card">
         <div class="svc-num">04</div>
-        <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
         <h3>VFD Drive Panels</h3>
         <p>Variable Frequency Drive panels for precise motor speed control, improved energy efficiency, and reduced mechanical wear.</p>
-        <button class="svc-link" onclick="openModal('modal-svc4')">Learn More →</button>
       </div>
-      <div class="svc-card reveal">
+      <div class="svc-card">
         <div class="svc-num">05</div>
-        <div class="svc-icon"><svg viewBox="0 0 24 24"><polygon points="12,2 20,7 20,17 12,22 4,17 4,7"/><circle cx="12" cy="12" r="4"/></svg></div>
         <h3>Power Distribution</h3>
         <p>High-capacity distribution panels with precision metering, surge protection, and intelligent load management for industrial facilities.</p>
-        <button class="svc-link" onclick="openModal('modal-svc5')">Learn More →</button>
+      </div>
     </div>
   </div>
 </section>
@@ -903,92 +267,31 @@ footer{background:#0b1a2e;color:rgba(255,255,255,.55);}
 <section id="about" class="section section-alt">
   <div class="section-inner">
     <div class="about-grid">
-      <div class="about-visual reveal-left">
-        <div class="panel-frame">
-          <svg viewBox="0 0 520 390" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="520" height="390" fill="#1a2e4a"/>
-            <rect x="28" y="22" width="464" height="346" rx="3" fill="#1e3254" stroke="#2a4a72" stroke-width="1.5"/>
-            <rect x="36" y="30" width="448" height="38" fill="#1a3050" stroke="#2a4570" stroke-width="0.8"/>
-            <circle cx="56" cy="49" r="7" fill="#28c76f" opacity="0.9"/><circle cx="56" cy="49" r="3.5" fill="#28c76f"/>
-            <text x="260" y="54" font-family="monospace" font-size="12" fill="#e0eaf8" text-anchor="middle" letter-spacing="3">∞ INFINITE CONTROL PANEL SYSTEM</text>
-            <circle cx="460" cy="49" r="7" fill="#ea5455" opacity="0.3" stroke="#ea5455" stroke-width="1"/>
-            <rect x="44" y="80" width="140" height="128" rx="2" fill="#142030" stroke="#243650" stroke-width="1"/>
-            <circle cx="90" cy="134" r="42" stroke="#3a6090" stroke-width="2" fill="#0e1e2e"/>
-            <circle cx="90" cy="134" r="28" stroke="#243050" stroke-width="1" fill="none"/>
-            <path d="M 61 158 A 42 42 0 1 1 119 158" stroke="#4a90d9" stroke-width="1.2" fill="none"/>
-            <line x1="90" y1="92" x2="90" y2="106" stroke="#4a90d9" stroke-width="2"/>
-            <line x1="122" y1="102" x2="115" y2="113" stroke="#4a90d9" stroke-width="1.5"/>
-            <line x1="132" y1="134" x2="118" y2="134" stroke="#4a90d9" stroke-width="2"/>
-            <line x1="58" y1="102" x2="65" y2="113" stroke="#4a90d9" stroke-width="1.5"/>
-            <line x1="48" y1="134" x2="62" y2="134" stroke="#4a90d9" stroke-width="2"/>
-            <line x1="90" y1="98" x2="90" y2="134" stroke="#28c76f" stroke-width="2.5" transform="rotate(-42 90 134)"/>
-            <circle cx="90" cy="134" r="5" fill="#4a90d9"/>
-            <text x="90" y="178" font-family="monospace" font-size="9" fill="#7a9abc" text-anchor="middle">CURRENT (A)</text>
-            <rect x="52" y="188" width="40" height="14" rx="1" fill="#1a4028" stroke="#28c76f" stroke-width="1"/>
-            <text x="72" y="198" font-family="monospace" font-size="7.5" fill="#28c76f" text-anchor="middle">START</text>
-            <rect x="98" y="188" width="40" height="14" rx="1" fill="#401818" stroke="#ea5455" stroke-width="1"/>
-            <text x="118" y="198" font-family="monospace" font-size="7.5" fill="#ea5455" text-anchor="middle">STOP</text>
-            <rect x="192" y="80" width="160" height="128" rx="2" fill="#0a1420" stroke="#1e3050" stroke-width="1"/>
-            <rect x="202" y="90" width="140" height="100" rx="1" fill="#060e18" stroke="#1a2e48" stroke-width="0.8"/>
-            <text x="272" y="104" font-family="monospace" font-size="9" fill="#4a90d9" text-anchor="middle" letter-spacing="2">STATUS MONITOR</text>
-            <line x1="204" y1="110" x2="338" y2="110" stroke="#1a2e48" stroke-width="0.5"/>
-            <text x="208" y="124" font-family="monospace" font-size="9" fill="#28c76f">● SYS: ONLINE</text>
-            <text x="208" y="140" font-family="monospace" font-size="9" fill="#4a90d9">● LOAD: 76.3%</text>
-            <text x="208" y="156" font-family="monospace" font-size="9" fill="#f8a73c">● TEMP: 44°C</text>
-            <text x="208" y="172" font-family="monospace" font-size="9" fill="#28c76f">● RUN: 1,247h</text>
-            <rect x="360" y="80" width="132" height="128" rx="2" fill="#0e1c2e" stroke="#1e3048" stroke-width="1"/>
-            <text x="426" y="96" font-family="monospace" font-size="9" fill="#4a90d9" text-anchor="middle" letter-spacing="2">BREAKERS</text>
-            <rect x="372" y="102" width="22" height="46" rx="1.5" fill="#1a3040" stroke="#2a4a60" stroke-width="1"/>
-            <rect x="375" y="106" width="16" height="14" rx="1" fill="#0a1c2e"/><rect x="377" y="124" width="12" height="20" rx="1" fill="#4a90d9" opacity="0.65"/>
-            <text x="383" y="158" font-family="monospace" font-size="7" fill="#6a9abc" text-anchor="middle">L1</text>
-            <rect x="400" y="102" width="22" height="46" rx="1.5" fill="#1a3040" stroke="#2a4a60" stroke-width="1"/>
-            <rect x="403" y="106" width="16" height="14" rx="1" fill="#0a1c2e"/><rect x="405" y="124" width="12" height="20" rx="1" fill="#4a90d9" opacity="0.65"/>
-            <text x="411" y="158" font-family="monospace" font-size="7" fill="#6a9abc" text-anchor="middle">L2</text>
-            <rect x="428" y="102" width="22" height="46" rx="1.5" fill="#1a3040" stroke="#2a4a60" stroke-width="1"/>
-            <rect x="431" y="106" width="16" height="14" rx="1" fill="#0a1c2e"/><rect x="433" y="124" width="12" height="20" rx="1" fill="#4a90d9" opacity="0.65"/>
-            <text x="439" y="158" font-family="monospace" font-size="7" fill="#6a9abc" text-anchor="middle">L3</text>
-            <rect x="456" y="102" width="26" height="46" rx="1.5" fill="#2a1020" stroke="#4a2030" stroke-width="1"/>
-            <rect x="459" y="106" width="20" height="14" rx="1" fill="#1a0a18"/><rect x="461" y="124" width="16" height="20" rx="1" fill="#ea5455" opacity="0.5"/>
-            <text x="469" y="158" font-family="monospace" font-size="7" fill="#ea7070" text-anchor="middle">MAIN</text>
-            <rect x="44" y="222" width="448" height="130" rx="2" fill="#0e1c2c" stroke="#1e3048" stroke-width="1"/>
-            <text x="268" y="240" font-family="monospace" font-size="9" fill="#4a90d9" text-anchor="middle" letter-spacing="2">CONTROL WIRING + TERMINAL BLOCKS</text>
-            <line x1="48" y1="248" x2="488" y2="248" stroke="#1e3048" stroke-width="0.5"/>
-            <rect x="56" y="256" width="10" height="28" rx="0.5" fill="#1a3050" stroke="#2a4060" stroke-width="0.5"/><rect x="58" y="258" width="6" height="10" rx="0.3" fill="#4a90d9" opacity="0.55"/>
-            <rect x="70" y="256" width="10" height="28" rx="0.5" fill="#1a3050" stroke="#2a4060" stroke-width="0.5"/><rect x="72" y="258" width="6" height="10" rx="0.3" fill="#28c76f" opacity="0.55"/>
-            <rect x="84" y="256" width="10" height="28" rx="0.5" fill="#1a3050" stroke="#2a4060" stroke-width="0.5"/><rect x="86" y="258" width="6" height="10" rx="0.3" fill="#ea5455" opacity="0.55"/>
-            <rect x="98" y="256" width="10" height="28" rx="0.5" fill="#1a3050" stroke="#2a4060" stroke-width="0.5"/><rect x="100" y="258" width="6" height="10" rx="0.3" fill="#f8a73c" opacity="0.55"/>
-            <rect x="112" y="256" width="10" height="28" rx="0.5" fill="#1a3050" stroke="#2a4060" stroke-width="0.5"/><rect x="114" y="258" width="6" height="10" rx="0.3" fill="#4a90d9" opacity="0.55"/>
-            <rect x="126" y="256" width="10" height="28" rx="0.5" fill="#1a3050" stroke="#2a4060" stroke-width="0.5"/><rect x="128" y="258" width="6" height="10" rx="0.3" fill="#28c76f" opacity="0.5"/>
-            <path d="M 190 256 L 190 348" stroke="#c0781e" stroke-width="3.5" opacity="0.38"/>
-            <path d="M 204 256 L 204 348" stroke="#4a90d9" stroke-width="3.5" opacity="0.38"/>
-            <path d="M 218 256 L 218 348" stroke="#28c76f" stroke-width="3.5" opacity="0.38"/>
-            <path d="M 232 256 L 232 348" stroke="#ea5455" stroke-width="3.5" opacity="0.38"/>
-            <path d="M 246 256 L 246 348" stroke="#c0781e" stroke-width="3.5" opacity="0.38"/>
-            <path d="M 260 256 L 260 348" stroke="#4a90d9" stroke-width="3.5" opacity="0.38"/>
-            <path d="M 274 256 L 274 348" stroke="#888" stroke-width="3.5" opacity="0.28"/>
-            <rect x="370" y="256" width="10" height="28" rx="0.5" fill="#1a3050" stroke="#2a4060" stroke-width="0.5"/><rect x="372" y="258" width="6" height="10" rx="0.3" fill="#ea5455" opacity="0.55"/>
-            <rect x="384" y="256" width="10" height="28" rx="0.5" fill="#1a3050" stroke="#2a4060" stroke-width="0.5"/><rect x="386" y="258" width="6" height="10" rx="0.3" fill="#4a90d9" opacity="0.55"/>
-            <rect x="398" y="256" width="10" height="28" rx="0.5" fill="#1a3050" stroke="#2a4060" stroke-width="0.5"/><rect x="400" y="258" width="6" height="10" rx="0.3" fill="#28c76f" opacity="0.55"/>
-            <rect x="412" y="256" width="10" height="28" rx="0.5" fill="#1a3050" stroke="#2a4060" stroke-width="0.5"/><rect x="414" y="258" width="6" height="10" rx="0.3" fill="#f8a73c" opacity="0.55"/>
-            <rect x="56" y="334" width="432" height="14" rx="0.5" fill="#0a1420" stroke="#1a2e40" stroke-width="0.5"/>
-            <text x="272" y="345" font-family="monospace" font-size="7" fill="rgba(74,144,217,0.4)" text-anchor="middle" letter-spacing="2">∞ INFINITE CONTROL PANEL SYSTEM INC. — CUSTOM MANUFACTURED</text>
-          </svg>
-        </div>
-        <div class="exp-badge">
-          <span class="exp-n">5+</span>
-          <span class="exp-t">Years of<br>Excellence</span>
+      <div>
+        <div class="about-panel">
+          <div class="about-panel-title">∞ ICPS Inc.</div>
+          <div class="about-panel-sub">Infinite Control Panel System</div>
+          <div class="panel-grid">
+            <div class="panel-cell"><strong>Specialization</strong>Custom Panel Manufacturing</div>
+            <div class="panel-cell"><strong>Location</strong>Ontario, Canada</div>
+            <div class="panel-cell"><strong>Hours</strong>Mon–Fri 8AM–5PM</div>
+            <div class="panel-cell"><strong>Standards</strong>CSA / UL / NEMA</div>
+          </div>
+          <div class="exp-row">
+            <div class="exp-box"><span class="exp-n">5+</span><span class="exp-t">Years of Excellence</span></div>
+            <div class="exp-box"><span class="exp-n">100+</span><span class="exp-t">Panels Delivered</span></div>
+          </div>
         </div>
       </div>
-
-      <div class="reveal-right">
+      <div>
         <div class="eyebrow">About Us</div>
         <h2 class="sec-title">Expert Custom Panel Engineering</h2>
         <p class="sec-sub">At Infinite Control Panel System Inc., we combine deep electrical engineering expertise with modern in-house manufacturing. Every panel is custom-designed from the ground up — no off-the-shelf compromises.</p>
         <ul class="checklist">
-          <li><div class="chk"><svg viewBox="0 0 10 10"><polyline points="2,5 4,8 8,2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Custom schematic design</li>
-          <li><div class="chk"><svg viewBox="0 0 10 10"><polyline points="2,5 4,8 8,2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>In-house fabrication &amp; wiring</li>
-          <li><div class="chk"><svg viewBox="0 0 10 10"><polyline points="2,5 4,8 8,2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Full functional testing</li>
-          <li><div class="chk"><svg viewBox="0 0 10 10"><polyline points="2,5 4,8 8,2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Full documentation &amp; manuals</li>
+          <li><div class="chk">✓</div>Custom schematic design</li>
+          <li><div class="chk">✓</div>In-house fabrication &amp; wiring</li>
+          <li><div class="chk">✓</div>Full functional testing</li>
+          <li><div class="chk">✓</div>Complete documentation &amp; manuals</li>
         </ul>
         <a href="#contact" class="btn-primary">Get a Free Consultation</a>
       </div>
@@ -1000,46 +303,38 @@ footer{background:#0b1a2e;color:rgba(255,255,255,.55);}
 <section id="industries" class="industries-section">
   <div class="industries-inner">
     <div class="eyebrow">Who We Serve</div>
-    <h2 class="sec-title" style="color:white;">Industries We Work With</h2>
+    <h2 class="sec-title">Industries We Work With</h2>
     <div class="industries-grid">
-      <div class="ind-item reveal">
-        <div class="ind-icon"><svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="1"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg></div>
-        <h5>Manufacturing</h5>
+      <div class="ind-item">
+        <h5>01. Manufacturing</h5>
         <p>Production lines, assembly automation, and process control panels for manufacturers of all scales.</p>
       </div>
-      <div class="ind-item reveal">
-        <div class="ind-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
-        <h5>Agrifood</h5>
+      <div class="ind-item">
+        <h5>02. Agrifood</h5>
         <p>Food processing, grain management, and agricultural facility electrical control systems.</p>
       </div>
-      <div class="ind-item reveal">
-        <div class="ind-icon"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
-        <h5>Energy</h5>
+      <div class="ind-item">
+        <h5>03. Energy</h5>
         <p>Power generation, solar, and utility-grade panels designed for demanding energy environments.</p>
       </div>
-      <div class="ind-item reveal">
-        <div class="ind-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.16 6.16l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
-        <h5>Water Treatment</h5>
+      <div class="ind-item">
+        <h5>04. Water Treatment</h5>
         <p>Municipal and industrial water and wastewater facility automation and control panels.</p>
       </div>
-      <div class="ind-item reveal">
-        <div class="ind-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg></div>
-        <h5>Automotive</h5>
+      <div class="ind-item">
+        <h5>05. Automotive</h5>
         <p>Assembly line controls, robotic cell panels, and press room electrical systems.</p>
       </div>
-      <div class="ind-item reveal">
-        <div class="ind-icon"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg></div>
-        <h5>Construction</h5>
+      <div class="ind-item">
+        <h5>06. Construction</h5>
         <p>Temporary power distribution, site electrical panels, and building automation systems.</p>
       </div>
-      <div class="ind-item reveal">
-        <div class="ind-icon"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="8" rx="1"/><rect x="2" y="14" width="20" height="8" rx="1"/><line x1="6" y1="6" x2="6" y2="6"/><line x1="6" y1="18" x2="6" y2="18"/></svg></div>
-        <h5>Mining</h5>
+      <div class="ind-item">
+        <h5>07. Mining</h5>
         <p>Explosion-proof and heavy-duty panels for mining operations and extraction facilities.</p>
       </div>
-      <div class="ind-item reveal">
-        <div class="ind-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
-        <h5>OEM / Machine Build</h5>
+      <div class="ind-item">
+        <h5>08. OEM / Machine Build</h5>
         <p>OEM control panels integrated into custom machines and automated work cells.</p>
       </div>
     </div>
@@ -1049,15 +344,27 @@ footer{background:#0b1a2e;color:rgba(255,255,255,.55);}
 <!-- WHY CHOOSE US -->
 <section class="section">
   <div class="section-inner">
-    <div style="text-align:center;margin-bottom:52px;">
-      <div class="eyebrow" style="justify-content:center;">Why Choose Us</div>
-      <h2 class="sec-title" style="max-width:600px;margin:0 auto;">The ∞ Difference</h2>
+    <div style="text-align:center;margin-bottom:48px;">
+      <div class="eyebrow">Why Choose Us</div>
+      <h2 class="sec-title">The ∞ Difference</h2>
     </div>
     <div class="why-grid">
-      <div class="why-card reveal"><div class="why-n">01</div><h4>100% Custom Built</h4><p>Every panel is engineered specifically for your project. No off-the-shelf units — everything is designed, assembled, and tested to your exact specifications.</p></div>
-      <div class="why-card reveal"><div class="why-n">02</div><h4>Expert Engineering</h4><p>Certified electrical engineers with 5+ years of hands-on experience across industrial, commercial, and manufacturing sectors.</p></div>
-      <div class="why-card reveal"><div class="why-n">03</div><h4>Compliance Ready</h4><p>All panels designed and assembled to North American and European standards, and applicable safety regulations.</p></div>
-        </div>
+      <div class="why-card">
+        <div class="why-n">01</div>
+        <h4>100% Custom Built</h4>
+        <p>Every panel is engineered specifically for your project. No off-the-shelf units — everything is designed, assembled, and tested to your exact specifications.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-n">02</div>
+        <h4>Expert Engineering</h4>
+        <p>Certified electrical engineers with 5+ years of hands-on experience across industrial, commercial, and manufacturing sectors.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-n">03</div>
+        <h4>Compliance Ready</h4>
+        <p>All panels designed and assembled to North American and European standards and applicable safety regulations.</p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -1068,40 +375,36 @@ footer{background:#0b1a2e;color:rgba(255,255,255,.55);}
       <h2>Ready to Start Your Control Panel Project?</h2>
       <p>Contact our engineering team for a detailed quote.</p>
     </div>
-    <a href="#contact" class="btn-primary" style="white-space:nowrap;flex-shrink:0;font-size:1rem;">Request a Quote</a>
+    <a href="#contact" class="btn-primary" style="white-space:nowrap;font-size:1rem;">Request a Quote</a>
   </div>
 </div>
 
 <!-- CONTACT -->
 <section id="contact" class="section section-alt">
   <div class="section-inner">
-    <div style="margin-bottom:50px;">
+    <div style="margin-bottom:44px;">
       <div class="eyebrow">Get In Touch</div>
       <h2 class="sec-title">Contact Us</h2>
     </div>
     <div class="contact-grid">
-      <div class="c-info-block reveal-left">
+      <div class="c-info-block">
         <h3>∞ ICPS Inc.</h3>
         <p class="c-tagline">We specialize in custom manufacturing of industrial control panels. Tell us about your project and we'll engineer the perfect solution.</p>
         <div class="c-item">
-          <div class="c-ico"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
-          <div><div class="c-lbl">Contact</div><div class="c-val">ICPS</div></div>
-        </div>
-        <div class="c-item">
-          <div class="c-ico"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
           <div><div class="c-lbl">Email</div><div class="c-val"><a href="mailto:deeppatel0839@gmail.com">deeppatel0839@gmail.com</a></div></div>
         </div>
         <div class="c-item">
-          <div class="c-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg></div>
           <div><div class="c-lbl">Business Hours</div><div class="c-val">Monday – Friday: 8:00 AM – 5:00 PM</div></div>
         </div>
         <div class="c-item">
-          <div class="c-ico"><svg viewBox="0 0 24 24"><polygon points="13,2 3,14 12,14 11,22 21,10 12,10"/></svg></div>
           <div><div class="c-lbl">Specialization</div><div class="c-val">Custom Control Panel Manufacturing</div></div>
+        </div>
+        <div class="c-item">
+          <div><div class="c-lbl">Service Area</div><div class="c-val">Ontario, Canada &amp; surrounding regions</div></div>
         </div>
       </div>
 
-      <div class="c-form-block reveal-right">
+      <div class="c-form-block">
         <h3>Send a Project Inquiry</h3>
         <form id="contactForm">
           <div class="form-row">
@@ -1113,10 +416,11 @@ footer{background:#0b1a2e;color:rgba(255,255,255,.55);}
             <div class="fg"><label>Panel Type</label>
               <select name="panel_type">
                 <option value="">Select type...</option>
-                <option>Industrial Control Panel</option>
+                <option>Custom Control Panel</option>
                 <option>Motor Control Center (MCC)</option>
                 <option>VFD Drive Panel</option>
-                <option>Custom / Other</option>
+                <option>Power Distribution</option>
+                <option>Other</option>
               </select>
             </div>
           </div>
@@ -1124,8 +428,8 @@ footer{background:#0b1a2e;color:rgba(255,255,255,.55);}
             <label>Project Requirements *</label>
             <textarea name="message" required placeholder="Describe your requirements: voltage, amperage, number of motors, environment, timeline, quantity, and any special specifications..."></textarea>
           </div>
-          <button type="submit" class="form-submit">∞ Submit Inquiry — Saved to Database</button>
-          <p class="form-note">Your inquiry is securely saved. ICPS will respond within 1 business day.</p>
+          <button type="submit" class="form-submit">∞ Submit Inquiry</button>
+          <p class="form-note">ICPS will respond within 1 business day.</p>
         </form>
       </div>
     </div>
@@ -1136,8 +440,8 @@ footer{background:#0b1a2e;color:rgba(255,255,255,.55);}
 <footer>
   <div class="foot-top">
     <div class="foot-brand">
-      <div class="f-logo">
-        <div class="logo-mark"><span class="inf">∞</span></div>
+      <div class="logo">
+        <div class="logo-mark">∞</div>
         <div class="logo-words">
           <div class="w1" style="color:white;">Infinite Control Panel</div>
           <div class="w2" style="color:rgba(255,255,255,.35);">System Inc.</div>
@@ -1149,248 +453,30 @@ footer{background:#0b1a2e;color:rgba(255,255,255,.55);}
       <h5>Services</h5>
       <ul>
         <li>Custom Control Panels</li>
+        <li>Automation Panels</li>
         <li>Motor Control Centers</li>
         <li>VFD Drive Panels</li>
         <li>Power Distribution</li>
-            </ul>
+      </ul>
     </div>
     <div class="foot-col">
       <h5>Contact</h5>
       <ul>
-        <li>ICPS</li>
         <li><a href="mailto:deeppatel0839@gmail.com">deeppatel0839@gmail.com</a></li>
-        <li>Mon–Fri: 7:00 AM – 5:00 PM</li>
-        <li style="margin-top:16px;"><a href="#contact" class="btn-primary" style="font-size:0.8rem;padding:10px 22px;">Get a Quote</a></li>
+        <li>Mon–Fri: 8:00 AM – 5:00 PM</li>
+        <li style="margin-top:14px;"><a href="#contact" class="btn-primary" style="font-size:0.8rem;padding:9px 20px;">Get a Quote</a></li>
       </ul>
     </div>
   </div>
   <div class="foot-bot">
     <span>© 2025 Infinite Control Panel System Inc. All rights reserved.</span>
-    <span class="foot-inf">∞</span>
     <span>Custom Control Panel Manufacturing</span>
   </div>
 </footer>
 
-<!-- ═══════════════════════════════════════════════════════
-     SERVICE MODALS
-═══════════════════════════════════════════════════════ -->
-
-<!-- Modal 1: Custom Control Panels -->
-<div class="modal-backdrop" id="modal-svc1">
-  <div class="modal-box">
-    <div class="modal-hd">
-      <div class="modal-hd-left">
-        <div class="modal-hd-icon"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="1"/><circle cx="8" cy="8" r="2.5"/><circle cx="16" cy="8" r="2.5"/><rect x="4" y="14" width="7" height="5" rx="0.5"/><rect x="13" y="14" width="7" height="5" rx="0.5"/></svg></div>
-        <div>
-          <h2>Custom Control Panels</h2>
-          <p>Fully engineered, assembled in-house, and tested to your exact specifications.</p>
-        </div>
-      </div>
-      <button class="modal-close" onclick="closeModal('modal-svc1')">×</button>
-    </div>
-    <div class="modal-body">
-      <div class="modal-section">
-        <h4>What We Build</h4>
-        <p>Infinite Control Panel System Inc. designs and manufactures industrial control panels from the ground up. Whether you need a single bespoke unit or a production run, every panel is engineered specifically for your electrical loads, operating environment, NEMA enclosure rating, and industry requirements. We handle the full lifecycle — from schematic design and BOM through fabrication, wiring, labeling, and final acceptance testing.</p>
-        <p>Our panels are used in manufacturing plants, food processing facilities, municipal utilities, and commercial buildings across Ontario and beyond. If you have a specific load schedule or existing drawings, we work directly from your specs. If you're starting from scratch, our engineers will guide you through every design decision.</p>
-      </div>
-    </div>
-    <div class="modal-ft">
-      <p>Ready to discuss your custom panel project? Contact ICPS for a detailed quote.</p>
-      <a href="#contact" onclick="closeModal('modal-svc1')">Get a Quote →</a>
-    </div>
-  </div>
-</div>
-
-<!-- Modal 3: Motor Control Centers -->
-<div class="modal-backdrop" id="modal-svc3">
-  <div class="modal-box">
-    <div class="modal-hd">
-      <div class="modal-hd-left">
-        <div class="modal-hd-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><line x1="12" y1="3" x2="12" y2="8"/><line x1="12" y1="16" x2="12" y2="21"/><line x1="3" y1="12" x2="8" y2="12"/><line x1="16" y1="12" x2="21" y2="12"/></svg></div>
-        <div>
-          <h2>Motor Control Centers</h2>
-          <p>Centralized, multi-section MCC assemblies for industrial motor management.</p>
-        </div>
-      </div>
-      <button class="modal-close" onclick="closeModal('modal-svc3')">×</button>
-    </div>
-    <div class="modal-body">
-      <div class="modal-section">
-        <h4>What We Build</h4>
-        <p>A Motor Control Center (MCC) is the most efficient way to manage multiple electric motors from a single, centralized enclosure. We fabricate custom MCC assemblies ranging from simple 2-section units to large multi-section lineups managing dozens of motors in a single row. Each bucket (motor starter unit) is custom-configured with the right combination of disconnect means, overload relay, contactor, and protective devices for the motor it serves.</p>
-        <p>Our MCC assemblies are wired with copper bus bars rated for your full-load current, with short-circuit current ratings (SCCR) properly calculated and labeled. We can integrate variable frequency drives, soft starters, and intelligent motor protection relays directly into the MCC structure, eliminating the need for separate VFD enclosures and reducing overall footprint.</p>
-      </div>
-      <div class="modal-section">
-        <h4>Key Features &amp; Capabilities</h4>
-        <div class="modal-grid">
-          <div class="modal-feat"><div class="modal-feat-dot"></div>Multi-section lineups with horizontal and vertical bus bars</div>
-          <div class="modal-feat"><div class="modal-feat-dot"></div>Full-voltage, reduced-voltage, and soft-start motor starters</div>
-          <div class="modal-feat"><div class="modal-feat-dot"></div>Integrated VFD buckets (15HP – 200HP+) within MCC structure</div>
-          <div class="modal-feat"><div class="modal-feat-dot"></div>Bimetallic and electronic overload relays for each motor</div>
-          <div class="modal-feat"><div class="modal-feat-dot"></div>Fusible and non-fusible disconnect switches per circuit</div>
-          <div class="modal-feat"><div class="modal-feat-dot"></div>Phase loss, phase reversal, and under-voltage protection</div>
-          <div class="modal-feat"><div class="modal-feat-dot"></div>Copper bus rated 600A – 2,000A main bus</div>
-          <div class="modal-feat"><div class="modal-feat-dot"></div>Deadfront and drawout construction options available</div>
-        </div>
-      </div>
-      <div class="modal-section">
-        <h4>Typical Specifications</h4>
-        <div class="modal-specs">
-          <div class="modal-spec"><div class="sl">Voltage</div><div class="sv">208V – 600V 3PH</div></div>
-          <div class="modal-spec"><div class="sl">Main Bus</div><div class="sv">200A – 2,000A</div></div>
-          <div class="modal-spec"><div class="sl">Motor Range</div><div class="sv">1/4 HP – 500 HP</div></div>
-          <div class="modal-spec"><div class="sl">Sections</div><div class="sv">1 – 12+ Sections</div></div>
-          <div class="modal-spec"><div class="sl">Enclosure</div><div class="sv">NEMA 1, 12, 4X</div></div>
-          <div class="modal-spec"><div class="sl">Lead Time</div><div class="sv">4 – 10 Weeks</div></div>
-        </div>
-      </div>
-      <div class="modal-section">
-        <h4>Typical Applications</h4>
-        <div class="modal-tags">
-          <span class="modal-tag">Pumping Stations</span><span class="modal-tag">HVAC Systems</span><span class="modal-tag">Conveyor Lines</span><span class="modal-tag">Compressor Rooms</span><span class="modal-tag">Mining Operations</span><span class="modal-tag">Water Treatment</span><span class="modal-tag">Grain Handling</span><span class="modal-tag">Industrial Plants</span>
-        </div>
-      </div>
-    </div>
-    <div class="modal-ft">
-      <p>Managing multiple motors? An MCC is the cleanest and most efficient solution.</p>
-      <a href="#contact" onclick="closeModal('modal-svc3')">Get a Quote →</a>
-    </div>
-  </div>
-</div>
-
-<!-- Modal 4: VFD Drive Panels -->
-<div class="modal-backdrop" id="modal-svc4">
-  <div class="modal-box">
-    <div class="modal-hd">
-      <div class="modal-hd-left">
-        <div class="modal-hd-icon"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
-        <div>
-          <h2>VFD Drive Panels</h2>
-          <p>Precision variable frequency drive enclosures for energy-efficient motor control.</p>
-        </div>
-      </div>
-      <button class="modal-close" onclick="closeModal('modal-svc4')">×</button>
-    </div>
-    <div class="modal-body">
-      <div class="modal-section">
-        <h4>What We Build</h4>
-        <p>Variable Frequency Drive (VFD) panels give you precise control over motor speed, torque, and acceleration — delivering significant energy savings and dramatically reducing mechanical wear on pumps, fans, compressors, and conveyor drives. We engineer and assemble stand-alone VFD enclosures and multi-drive panels using drives from Allen-Bradley PowerFlex, Danfoss, ABB, Yaskawa, and Siemens SINAMICS platforms.</p>
-        <p>Every VFD panel includes input line reactors or harmonic filters where required to protect the drive and upstream power quality. We size input fusing, disconnect means, and output wiring correctly for both the drive and motor nameplate ratings, and program the drive parameters to match your specific application — whether that's a simple hand-off-auto pump station or a complex coordinated multi-drive system with ramp profiles and PID feedback.</p>
-      </div>
-      <div class="modal-section">
-        <h4>Key Features &amp; Capabilities</h4>
-        <div class="modal-grid">
-          <div class="modal-feat"><div class="modal-feat-dot"></div>Allen-Bradley, ABB, Danfoss, Yaskawa, Siemens drive brands</div>
-          <div class="modal-feat"><div class="modal-feat-dot"></div>Single drive and multi-drive enclosures (up to 5+ drives)</div>
-          <div class="modal-feat"><div class="modal-feat-dot"></div>Input line reactors and harmonic filters for power quality</div>
-          <div class="modal-feat"><div class="modal-feat-dot"></div>Drive parameter programming for your exact application</div>
-          <div class="modal-feat"><div class="modal-feat-dot"></div>Hand-Off-Auto (HOA) selector switches and local speed pot</div>
-          <div class="modal-feat"><div class="modal-feat-dot"></div>4–20mA / 0–10V analog speed reference inputs</div>
-          <div class="modal-feat"><div class="modal-feat-dot"></div>Thermal management — forced air cooling or conditioned enclosures</div>
-        </div>
-      </div>
-      <div class="modal-section">
-        <h4>Typical Specifications</h4>
-        <div class="modal-specs">
-          <div class="modal-spec"><div class="sl">Voltage</div><div class="sv">208V – 600V 3PH</div></div>
-          <div class="modal-spec"><div class="sl">Motor HP</div><div class="sv">1 HP – 500 HP</div></div>
-          <div class="modal-spec"><div class="sl">Drive Brands</div><div class="sv">A-B / ABB / Danfoss</div></div>
-          <div class="modal-spec"><div class="sl">Energy Savings</div><div class="sv">Up to 50% vs DOL</div></div>
-          <div class="modal-spec"><div class="sl">Enclosure</div><div class="sv">NEMA 1, 12, 4X</div></div>
-          <div class="modal-spec"><div class="sl">Lead Time</div><div class="sv">2 – 5 Weeks</div></div>
-        </div>
-      </div>
-      <div class="modal-section">
-        <h4>Common Applications</h4>
-        <div class="modal-tags">
-          <span class="modal-tag">Pump Speed Control</span><span class="modal-tag">Fan &amp; Blower</span><span class="modal-tag">Conveyor Speed</span><span class="modal-tag">Compressor Control</span><span class="modal-tag">Cooling Tower Fans</span><span class="modal-tag">Crane Hoists</span><span class="modal-tag">Mixer Drives</span><span class="modal-tag">Extruder Control</span>
-        </div>
-      </div>
-    </div>
-    <div class="modal-ft">
-      <p>Reduce energy costs and protect your motors with a custom VFD panel.</p>
-      <a href="#contact" onclick="closeModal('modal-svc4')">Get a Quote →</a>
-    </div>
-  </div>
-</div>
-
-<!-- Modal 5: Power Distribution -->
-<div class="modal-backdrop" id="modal-svc5">
-  <div class="modal-box">
-    <div class="modal-hd">
-      <div class="modal-hd-left">
-        <div class="modal-hd-icon"><svg viewBox="0 0 24 24"><polygon points="12,2 20,7 20,17 12,22 4,17 4,7"/><circle cx="12" cy="12" r="4"/></svg></div>
-        <div>
-          <h2>Power Distribution Panels</h2>
-          <p>High-capacity distribution centers for industrial and commercial facilities.</p>
-        </div>
-      </div>
-      <button class="modal-close" onclick="closeModal('modal-svc5')">×</button>
-    </div>
-    <div class="modal-body">
-      <div class="modal-section">
-        <h4>What We Build</h4>
-        <p>Power distribution panels (PDPs) and main distribution boards (MDBs) are the nerve center of your facility's electrical system. We design and build custom distribution panels that take power from your utility or generator feed and distribute it cleanly and safely to downstream branch circuit panels, motor control centers, and individual equipment loads throughout your plant or building.</p>
-        <p>Our distribution panels are engineered with properly sized main circuit breakers or main lugs, copper bus bars rated for your full-load and fault current requirements, and individual branch circuit overcurrent protection devices (MCCBs or fuses) for every outgoing circuit. We integrate digital power meters with Modbus communication, surge protective devices (SPDs), and automatic transfer switches (ATS) when generator backup is required.</p>
-      </div>
-      <div class="modal-section">
-        <h4>Key Features &amp; Capabilities</h4>
-        <div class="modal-grid">
-          <div class="modal-feat"><div class="modal-feat-dot"></div>Main breakers from 100A to 4,000A available</div>
-          <div class="modal-feat"><div class="modal-feat-dot"></div>Copper bus bars — fully braced for available fault current</div>
-          <div class="modal-feat"><div class="modal-feat-dot"></div>Digital metering: kW, kWh, PF, harmonics via Modbus</div>
-          <div class="modal-feat"><div class="modal-feat-dot"></div>Surge Protective Devices (SPD) — Type 1 and Type 2</div>
-          <div class="modal-feat"><div class="modal-feat-dot"></div>Automatic Transfer Switch (ATS) integration for standby gen</div>
-          <div class="modal-feat"><div class="modal-feat-dot"></div>Bolted fault and arc flash labels per NFPA 70E</div>
-          <div class="modal-feat"><div class="modal-feat-dot"></div>Branch circuits with individual MCCBs or fused disconnects</div>
-          <div class="modal-feat"><div class="modal-feat-dot"></div>Arc-flash hazard analysis and PPE labeling available</div>
-        </div>
-      </div>
-      <div class="modal-section">
-        <h4>Typical Specifications</h4>
-        <div class="modal-specs">
-          <div class="modal-spec"><div class="sl">Voltage</div><div class="sv">120V – 600V</div></div>
-          <div class="modal-spec"><div class="sl">Main Breaker</div><div class="sv">100A – 4,000A</div></div>
-          <div class="modal-spec"><div class="sl">SCCR</div><div class="sv">Up to 200 kAIC</div></div>
-          <div class="modal-spec"><div class="sl">Bus Material</div><div class="sv">Copper (standard)</div></div>
-          <div class="modal-spec"><div class="sl">Metering</div><div class="sv">Digital Modbus</div></div>
-          <div class="modal-spec"><div class="sl">Lead Time</div><div class="sv">3 – 7 Weeks</div></div>
-        </div>
-      </div>
-      <div class="modal-section">
-        <h4>Applications</h4>
-        <div class="modal-tags">
-          </div>
-      </div>
-    </div>
-    <div class="modal-ft">
-      <p>Power your facility safely and efficiently with a custom distribution panel.</p>
-      <a href="#contact" onclick="closeModal('modal-svc5')">Get a Quote →</a>
-    </div>
-  </div>
-</div>
-<!-- Toast notification -->
-<div class="toast" id="toast">
-  <div class="toast-dot"></div>
-  <span id="toast-msg">Inquiry saved to database!</span>
-</div>
+<div class="toast" id="toast"></div>
 
 <script>
-// ── Scroll reveal ──────────────────────────────────────
-const revealObs = new IntersectionObserver(entries => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      const siblings = Array.from(e.target.parentElement?.children || []);
-      e.target.style.transitionDelay = (siblings.indexOf(e.target) * 90) + 'ms';
-      e.target.classList.add('in');
-      revealObs.unobserve(e.target);
-    }
-  });
-}, { threshold: 0.1 });
-document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => revealObs.observe(el));
-
-// ── Smooth scroll ──────────────────────────────────────
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
     const h = a.getAttribute('href');
@@ -1400,26 +486,10 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
   });
 });
 
-// ── Active nav on scroll ───────────────────────────────
-window.addEventListener('scroll', () => {
-  const ids = ['services','about','products','industries','contact'];
-  document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('on'));
-  for (const id of ids) {
-    const el = document.getElementById(id);
-    if (!el) continue;
-    const r = el.getBoundingClientRect();
-    if (r.top <= 100 && r.bottom > 100) {
-      document.querySelector(`.nav-links a[href="#${id}"]`)?.classList.add('on');
-      break;
-    }
-  }
-});
-
-// ── Contact form → Flask API ───────────────────────────
 document.getElementById('contactForm').addEventListener('submit', async function(e) {
   e.preventDefault();
   const btn = this.querySelector('.form-submit');
-  btn.textContent = 'Saving...';
+  btn.textContent = 'Submitting...';
   btn.style.opacity = '0.7';
   try {
     const fd = new FormData(this);
@@ -1427,46 +497,18 @@ document.getElementById('contactForm').addEventListener('submit', async function
     const data = await res.json();
     if (data.ok) {
       this.reset();
-      showToast('✅ Inquiry saved to database! Darpan will contact you soon.');
+      showToast('Inquiry submitted! ICPS will contact you soon.');
     }
   } catch(err) {
-    showToast('Saved! Darpan will be in touch at deeppatel0839@gmail.com');
+    showToast('Inquiry received. Darpan will be in touch at deeppatel0839@gmail.com');
   }
-  btn.textContent = '∞ Submit Inquiry — Saved to Database';
+  btn.textContent = '∞ Submit Inquiry';
   btn.style.opacity = '1';
-});
-
-// ── Modal open/close ───────────────────────────────────
-function openModal(id) {
-  document.getElementById(id).classList.add('open');
-  document.body.style.overflow = 'hidden';
-}
-function closeModal(id) {
-  document.getElementById(id).classList.remove('open');
-  document.body.style.overflow = '';
-}
-// Close modals on backdrop click
-document.querySelectorAll('.modal-backdrop').forEach(m => {
-  m.addEventListener('click', e => {
-    if (e.target === m) {
-      m.classList.remove('open');
-      document.body.style.overflow = '';
-    }
-  });
-});
-// Close on Escape key
-document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') {
-    document.querySelectorAll('.modal-backdrop.open').forEach(m => {
-      m.classList.remove('open');
-      document.body.style.overflow = '';
-    });
-  }
 });
 
 function showToast(msg) {
   const t = document.getElementById('toast');
-  document.getElementById('toast-msg').textContent = msg;
+  t.textContent = msg;
   t.classList.add('show');
   setTimeout(() => t.classList.remove('show'), 4500);
 }
