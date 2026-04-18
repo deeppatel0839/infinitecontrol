@@ -28,24 +28,6 @@ html{scroll-behavior:smooth;}
 body{font-family:'Barlow',sans-serif;color:var(--text);background:var(--white);overflow-x:hidden;}
 a{text-decoration:none;color:inherit;}
 img{max-width:100%;}
-
-/* ─── TOPBAR ────────────────────────────────────────── */
-.topbar{
-  background:var(--navy);
-  color:rgba(255,255,255,0.72);
-  font-size:0.78rem;
-  letter-spacing:0.3px;
-  padding:7px 64px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:20px;
-}
-.topbar a{color:rgba(255,255,255,0.72);transition:color .2s;}
-.topbar a:hover{color:#fff;}
-.tb-r{display:flex;gap:28px;align-items:center;}
-.tb-dot{color:var(--red);font-size:0.7rem;}
-
 /* ─── NAV ───────────────────────────────────────────── */
 header{
   background:var(--white);
@@ -157,7 +139,7 @@ nav{
   letter-spacing:-3px;
 }
 .hero-sub{
-  font-size:1.06rem;
+  font-size:1.rem;
   color:rgba(255,255,255,0.68);
   line-height:1.8;
   max-width:460px;
@@ -919,12 +901,6 @@ footer{background:#0b1a2e;color:rgba(255,255,255,.55);}
         <h3>Power Distribution</h3>
         <p>High-capacity distribution panels with precision metering, surge protection, and intelligent load management for industrial facilities.</p>
         <button class="svc-link" onclick="openModal('modal-svc5')">Learn More →</button>
-      </div>
-      <div class="svc-card reveal">
-        <div class="svc-num">06</div>
-        <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9,12 11,14 15,10"/></svg></div>
-              <button class="svc-link" onclick="openModal('modal-svc6')">Learn More →</button>
-      </div>
     </div>
   </div>
 </section>
@@ -1026,44 +1002,6 @@ footer{background:#0b1a2e;color:rgba(255,255,255,.55);}
   </div>
 </section>
 
-<!-- PRODUCTS -->
-<section id="products" class="section">
-  <div class="section-inner">
-    <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:50px;gap:30px;">
-      <div>
-        <div class="eyebrow">What We Build</div>
-        <h2 class="sec-title">Panel Products</h2>
-      </div>
-      <a href="#contact" class="btn-primary">Request a Quote</a>
-    </div>
-    <div class="products-grid">
-      <div class="prod-card reveal">
-        <div class="prod-vis">
-          <div class="prod-tag">Custom</div>
-          <svg viewBox="0 0 120 120" fill="none"><rect x="8" y="8" width="104" height="104" rx="2" stroke="#4a90d9" stroke-width="1.5" fill="rgba(13,30,46,0.8)"/><circle cx="35" cy="42" r="18" stroke="#4a90d9" stroke-width="1.5" fill="none"/><line x1="35" y1="24" x2="35" y2="30" stroke="#4a90d9" stroke-width="2"/><line x1="47" y1="30" x2="43" y2="35" stroke="#4a90d9" stroke-width="1.5"/><line x1="53" y1="42" x2="47" y2="42" stroke="#4a90d9" stroke-width="2"/><line x1="35" y1="26" x2="35" y2="42" stroke="#28c76f" stroke-width="2" transform="rotate(-35 35 42)"/><circle cx="35" cy="42" r="3.5" fill="#4a90d9"/><circle cx="85" cy="42" r="18" stroke="#ea5455" stroke-width="1.5" fill="none"/><line x1="85" y1="24" x2="85" y2="30" stroke="#ea5455" stroke-width="2"/><line x1="85" y1="26" x2="85" y2="42" stroke="#f8a73c" stroke-width="2" transform="rotate(50 85 42)"/><circle cx="85" cy="42" r="3.5" fill="#ea5455"/><rect x="20" y="70" width="35" height="22" rx="1" fill="#1a4028" stroke="#28c76f" stroke-width="1"/><text x="37" y="84" font-family="monospace" font-size="7.5" fill="#28c76f" text-anchor="middle">START</text><rect x="65" y="70" width="35" height="22" rx="1" fill="#401818" stroke="#ea5455" stroke-width="1"/><text x="82" y="84" font-family="monospace" font-size="7.5" fill="#ea5455" text-anchor="middle">STOP</text></svg>
-        </div>
-        <div class="prod-body"><h4>Industrial Control Panel</h4><p>Heavy-duty NEMA enclosures with full custom wiring for process control.</p></div>
-      </div>
-      <div class="prod-card reveal">
-        <div class="prod-vis">2
-      <div class="prod-card reveal">
-        <div class="prod-vis">
-          <div class="prod-tag">MCC</div>
-          <svg viewBox="0 0 120 120" fill="none"><rect x="8" y="8" width="50" height="104" rx="2" stroke="#4a90d9" stroke-width="1.5" fill="rgba(13,25,40,0.9)"/><rect x="14" y="14" width="38" height="22" rx="1" fill="#1a3050" stroke="#2a4060" stroke-width="0.8"/><text x="33" y="28" font-family="monospace" font-size="6.5" fill="#28c76f" text-anchor="middle">RUNNING</text><rect x="14" y="42" width="16" height="26" rx="1" fill="#1a3050" stroke="#2a4060" stroke-width="0.8"/><rect x="17" y="52" width="10" height="12" rx="0.5" fill="#28c76f" opacity="0.6"/><rect x="36" y="42" width="16" height="26" rx="1" fill="#1a3050" stroke="#2a4060" stroke-width="0.8"/><rect x="39" y="52" width="10" height="12" rx="0.5" fill="#ea5455" opacity="0.5"/><rect x="14" y="74" width="38" height="32" rx="1" fill="#1a3050" stroke="#2a4060" stroke-width="0.8"/><text x="33" y="88" font-family="monospace" font-size="6" fill="#4a90d9" text-anchor="middle">MOTOR</text><text x="33" y="100" font-family="monospace" font-size="7" fill="#28c76f" text-anchor="middle">25 HP</text><rect x="66" y="8" width="46" height="104" rx="2" stroke="#f8a73c" stroke-width="1.5" fill="rgba(20,15,8,0.9)"/><rect x="72" y="14" width="34" height="88" rx="1" fill="#1a1408" stroke="#2a2010" stroke-width="0.8"/><text x="89" y="40" font-family="monospace" font-size="7.5" fill="#f8a73c" text-anchor="middle">VFD</text><text x="89" y="52" font-family="monospace" font-size="7.5" fill="#f8a73c" text-anchor="middle">DRIVE</text><text x="89" y="68" font-family="monospace" font-size="7" fill="#28c76f" text-anchor="middle">50 HP</text><text x="89" y="80" font-family="monospace" font-size="7" fill="#4a90d9" text-anchor="middle">480V</text></svg>
-        </div>
-        <div class="prod-body"><h4>Motor Control Center</h4><p>Multi-section MCC units managing multiple motors with VFD and bus bar.</p></div>
-      </div>
-      <div class="prod-card reveal">
-        <div class="prod-vis">
-          <div class="prod-tag">Power</div>
-          <svg viewBox="0 0 120 120" fill="none"><rect x="8" y="8" width="104" height="104" rx="2" stroke="#ea5455" stroke-width="1.5" fill="rgba(20,8,8,0.8)"/><rect x="16" y="16" width="88" height="88" rx="1.5" fill="#120808" stroke="#2a1010" stroke-width="0.8"/><text x="60" y="36" font-family="monospace" font-size="8" fill="#ea5455" text-anchor="middle" letter-spacing="1">POWER DIST</text><line x1="20" y1="42" x2="100" y2="42" stroke="#2a1010" stroke-width="0.5"/><rect x="24" y="48" width="24" height="40" rx="1" fill="#1a0808" stroke="#3a1818" stroke-width="0.8"/><text x="36" y="66" font-family="monospace" font-size="6.5" fill="#4a90d9" text-anchor="middle">480V</text><text x="36" y="78" font-family="monospace" font-size="6.5" fill="#28c76f" text-anchor="middle">3PH</text><rect x="56" y="48" width="40" height="40" rx="1" fill="#1a0808" stroke="#3a1818" stroke-width="0.8"/><path d="M 60 84 L 60 64 L 68 64 L 62 72 L 70 72 L 64 84" fill="#f8a73c" opacity="0.7"/><rect x="24" y="94" width="72" height="6" rx="0.5" fill="#1a0808" stroke="#3a1818" stroke-width="0.5"/></svg>
-        </div>
-        <div class="prod-body"><h4>Power Distribution Panel</h4><p>High-capacity units with precision metering and surge protection.</p></div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- INDUSTRIES -->
 <section id="industries" class="industries-section">
   <div class="industries-inner">
@@ -1124,7 +1062,7 @@ footer{background:#0b1a2e;color:rgba(255,255,255,.55);}
     <div class="why-grid">
       <div class="why-card reveal"><div class="why-n">01</div><h4>100% Custom Built</h4><p>Every panel is engineered specifically for your project. No off-the-shelf units — everything is designed, assembled, and tested to your exact specifications.</p></div>
       <div class="why-card reveal"><div class="why-n">02</div><h4>Expert Engineering</h4><p>Certified electrical engineers with 5+ years of hands-on experience across industrial, commercial, and manufacturing sectors.</p></div>
-      <div class="why-card reveal"><div class="why-n">05</div><h4>Compliance Ready</h4><p>All panels designed and assembled to UL 508A standards, NEC codes, and applicable safety regulations for North American markets.</p></div>
+      <div class="why-card reveal"><div class="why-n">03</div><h4>Compliance Ready</h4><p>All panels designed and assembled to North American and European standards, and applicable safety regulations.</p></div>
         </div>
   </div>
 </section>
